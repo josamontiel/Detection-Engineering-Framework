@@ -613,7 +613,7 @@ Exposure is risk, and risk is mitigated by safeguards. Safeguards
 protect assets that are endangered by threats.
 
 <figure>
-<img src="media/image007.jpeg" style="width:3.91971in;height:2.425in" />
+<img src="media/image007.png" style="width:3.91971in;height:2.425in" />
 <figcaption><p><span id="_Toc136940877" class="anchor"></span>Figure 1:
 Relationship of Cyber Elements</p></figcaption>
 </figure>
