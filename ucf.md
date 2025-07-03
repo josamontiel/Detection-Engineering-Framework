@@ -1,18 +1,8 @@
-<img src="media/image1.jpg" style="width:5.025in;height:3.78333in" />
-
 Use Case & Detection Engineering Framework
 
 November 23, 2024
 
 Version 2.0
-
-**Cisco Systems, Inc.  
-Corporate Headquarters  
-170 West Tasman Drive  
-San Jose, CA 95134-1706 USA  
-<http://www.cisco.com>  
-Tel: 408 526-4000 Toll Free: 800 553-NETS (6387)  
-Fax: 408 526-4100**
 
 # Contents
 
