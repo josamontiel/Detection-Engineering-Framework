@@ -1,4 +1,4 @@
-Use Case & Detection Engineering Framework
+# Use Case & Detection Engineering Framework
 
 November 23, 2024
 
@@ -6,194 +6,15 @@ Version 2.0
 
 # Contents
 
-[Contents [2](#contents)](#contents)
+1 [Introduction](#introduction)
 
-[List of Figures and Tables
-[4](#list-of-figures-and-tables)](#list-of-figures-and-tables)
+2 [Use Case and Detection Engineering Framework](#use-case-and-detection-engineering-lifecycle)
 
-[About This Use Case & Detection Engineering Framework
-[5](#about-this-use-case-detection-engineering-framework)](#about-this-use-case-detection-engineering-framework)
+3 [Drivers for Use Cases](#drivers-for-use-cases)
 
-[History [5](#history)](#history)
+4 [Use Case and Detection Engineering Lifecycle](#use-case-and-detection-engineering-lifecycle)
 
-[Review [5](#review)](#review)
-
-[Document Conventions [5](#document-conventions)](#document-conventions)
-
-[1 Introduction [6](#introduction)](#introduction)
-
-[1.1 Preface [6](#preface)](#preface)
-
-[1.2 Audience [7](#audience)](#audience)
-
-[1.3 Scope [7](#scope)](#scope)
-
-[2 Use Case & Detection Engineering Framework
-[8](#use-case-detection-engineering-framework)](#use-case-detection-engineering-framework)
-
-[2.1 Overview [8](#overview)](#overview)
-
-[2.2 Why adopt a Use Case & Detection Engineering Framework?
-[8](#why-adopt-a-use-case-detection-engineering-framework)](#why-adopt-a-use-case-detection-engineering-framework)
-
-[2.3 Principles of the Use Case & Detection Engineering Framework
-[9](#principles-of-the-use-case-detection-engineering-framework)](#principles-of-the-use-case-detection-engineering-framework)
-
-[2.4 What does the Use Case Framework consist of?
-[9](#what-does-the-use-case-framework-consist-of)](#what-does-the-use-case-framework-consist-of)
-
-[2.5 Challenges of Creating & Managing Use Cases
-[9](#challenges-of-creating-managing-use-cases)](#challenges-of-creating-managing-use-cases)
-
-[3 Drivers for Use Cases
-[10](#drivers-for-use-cases)](#drivers-for-use-cases)
-
-[3.1 Risk, Threats and Compliance
-[11](#risk-threats-and-compliance)](#risk-threats-and-compliance)
-
-[3.2 Aligning to Business Context
-[12](#aligning-to-business-context)](#aligning-to-business-context)
-
-[3.2.1 Risk Drivers [15](#_Toc136940837)](#_Toc136940837)
-
-[3.2.2 Threat Drivers [16](#threat-drivers)](#threat-drivers)
-
-[3.2.3 Compliance Drivers [19](#_Toc136940839)](#_Toc136940839)
-
-[4 Use Case & Detection Engineering Lifecycle
-[20](#use-case-detection-engineering-lifecycle)](#use-case-detection-engineering-lifecycle)
-
-[4.1 Planning Phase [22](#planning-phase)](#planning-phase)
-
-[4.1.1 Contextual Feasibility Analysis
-[24](#_Toc136940842)](#_Toc136940842)
-
-[4.1.2 Preparing for Development
-[26](#preparing-for-development)](#preparing-for-development)
-
-[4.1.3 Key Roles and Stakeholders
-[27](#key-roles-and-stakeholders)](#key-roles-and-stakeholders)
-
-[4.2 Development Phase [29](#development-phase)](#development-phase)
-
-[4.2.1 Technical Feasibility Analysis
-[30](#technical-feasibility-analysis)](#technical-feasibility-analysis)
-
-[4.2.2 Key Roles and Stakeholders
-[35](#key-roles-and-stakeholders-1)](#key-roles-and-stakeholders-1)
-
-[4.2.3 Development code engineering and testing
-[37](#development-code-engineering-and-testing)](#development-code-engineering-and-testing)
-
-[4.2.4 Response Development [48](#_Toc136940849)](#_Toc136940849)
-
-[4.2.5 Key Roles and Stakeholders
-[54](#key-roles-and-stakeholders-2)](#key-roles-and-stakeholders-2)
-
-[4.3 Delivery Phase [56](#delivery-phase)](#delivery-phase)
-
-[4.3.1 SOC Handover [56](#soc-handover)](#soc-handover)
-
-[4.3.2 Rule Activation [56](#rule-activation)](#rule-activation)
-
-[4.3.3 Use Case Cataloguing
-[59](#use-case-cataloguing)](#use-case-cataloguing)
-
-[4.3.4 Response Automation
-[67](#response-automation)](#response-automation)
-
-[4.3.5 Key Roles and Stakeholders
-[69](#key-roles-and-stakeholders-3)](#key-roles-and-stakeholders-3)
-
-[4.4 Improvement Phase [71](#improvement-phase)](#improvement-phase)
-
-[4.4.1 Decommissioning [72](#decommissioning)](#decommissioning)
-
-[4.4.2 Key Roles and Stakeholders
-[73](#key-roles-and-stakeholders-4)](#key-roles-and-stakeholders-4)
-
-[5 Best Practices [75](#best-practices)](#best-practices)
-
-[6 Appendix A – Use case catalogue template
-[77](#appendix-a-use-case-catalogue-template)](#appendix-a-use-case-catalogue-template)
-
-[7 Appendix B – Request for use case form template
-[78](#appendix-b-request-for-use-case-form-template)](#appendix-b-request-for-use-case-form-template)
-
-[8 Appendix C - Sources & References used
-[79](#appendix-c---sources-references-used)](#appendix-c---sources-references-used)
-
-[9 Appendix F: Acronym Listing or Full Glossary
-[80](#appendix-d-acronym-listing-or-full-glossary)](#appendix-d-acronym-listing-or-full-glossary)
-
-[Trademarks and Disclaimers
-[81](#trademarks-and-disclaimers)](#trademarks-and-disclaimers)
-
-# List of Figures and Tables
-
-**<u>Figures:</u>**
-
-[Figure 1: Relationship of Cyber Elements
-[12](#_Toc136940877)](#_Toc136940877)
-
-[Figure 2: Four phases of Use Case Lifecycle Management
-[20](#_Toc136940878)](https://cisco-my.sharepoint.com/personal/kue_cisco_com/Documents/0121%20-%20SOCless/STC%20CDC%20Use%20case%20Framework%202.0.docx#_Toc136940878)
-
-[Figure 3: Example Process steps for Planning Phase
-[28](#_Toc136940879)](#_Toc136940879)
-
-[Figure 4: Example of a System diagram
-[32](#_Toc136940880)](#_Toc136940880)
-
-[Figure 5: Example Process steps for Development Phase (Technical
-Feasibility) [36](#_Toc136940881)](#_Toc136940881)
-
-[Figure 6: Example Process steps for Development Phase
-[55](#_Toc136940882)](#_Toc136940882)
-
-[Figure 7: Example Process steps for Delivery Phase
-[70](#_Toc136940883)](#_Toc136940883)
-
-[Figure 8: Example Process steps for Improvement Phase
-[74](#_Toc136940884)](#_Toc136940884)
-
-**Tables:**
-
-[Table 1: Example of Key roles for Planning Phase
-[27](#_Toc136940866)](#_Toc136940866)
-
-[Table 2: Blocks of a rule [33](#_Toc136940867)](#_Toc136940867)
-
-[Table 3: Example of Key roles for Development Phase (Technical
-Analysis) [35](#_Toc136940868)](#_Toc136940868)
-
-[Table 4: Example of CR Blocks [38](#_Toc136940869)](#_Toc136940869)
-
-[Table 5: Example of VAL development
-[39](#_Toc136940870)](#_Toc136940870)
-
-[Table 6: Example of Key roles for Development Phase
-[54](#_Toc136940871)](#_Toc136940871)
-
-[Table 7: Example of data fields in Use case Catalouge
-[60](#_Toc136940872)](#_Toc136940872)
-
-[Table 8: Example of Rule Quality Rating
-[62](#_Toc136940873)](#_Toc136940873)
-
-[Table 9: Example of Release Benchmarking
-[63](#_Toc136940874)](#_Toc136940874)
-
-[Table 10: Example of Key roles for Delivery Phase
-[69](#_Toc136940875)](#_Toc136940875)
-
-[Table 11: Example of Key roles for Improvement Phase
-[73](#_Toc136940876)](#_Toc136940876)
-
-**Equations:**
-
-[Equation 1: Formula for measuring False-positive Ratio
-[57](#_Toc80701724)](#_Toc80701724)
+5 [Best Practices](#best-practices)
 
 # About this Use Case & Detection Engineering Framework
 
@@ -1062,7 +883,7 @@ organisation’s internal information security department.
 
  
 
-# Use Case & Detection Engineering Lifecycle
+# Use Case and Detection Engineering Lifecycle
 
 A Use Case Framework tackles the problem of “deciding where to focus on
 and on what time in a complex cyber security environment”. Most
@@ -1080,9 +901,6 @@ elements at the tactical and ultimately strategical layers and vice
 versa. This allows the SOC to show how business drivers are implemented
 in operational monitoring (top-down) and which monitoring rules relate
 to which specific threats and business drivers (bottom-up).
-
-<span id="_Toc136940878" class="anchor"></span>Figure 2: Four phases of
-Use Case Lifecycle Management
 
 **Planning:**
 
@@ -1468,12 +1286,6 @@ stakeholders</p></li>
 
 **<u>Example Process steps for Planning Phase</u>**
 
-<figure>
-<img src="media/image9.emf" />
-<figcaption><p><span id="_Toc136940879" class="anchor"></span>Figure 3:
-Example Process steps for Planning Phase</p></figcaption>
-</figure>
-
 ## Development Phase 
 
 This phase builds the technical detection capabilities with
@@ -1732,13 +1544,7 @@ mitigate and remediation cyber security incidents.
 During the identification of the data source, communication between the
 attacker and the monitoring team is key. For a better understanding of
 the attack progress a common architecture diagram is necessary to
-identify related assets. Figure 4 is an example for such a diagram.
-
-<figure>
-<img src="media/image10.png" style="width:4.56821in;height:3.22244in" />
-<figcaption><p><span id="_Toc136940880" class="anchor"></span>Figure 4:
-Example of a System diagram</p></figcaption>
-</figure>
+identify related assets.
 
 For the identification of attack related log messages, the monitoring
 team searches for evidence like source and target IP, certain strings
@@ -1967,16 +1773,6 @@ Analysis)</p></caption>
 </tr>
 </tbody>
 </table>
-
-**<u>Example Process steps for Development Phase (Technical
-Feasibility)</u>**
-
-<figure>
-<img src="media/image11.emf" />
-<figcaption><p><span id="_Toc136940881" class="anchor"></span>Figure 5:
-Example Process steps for Development Phase (Technical
-Feasibility)</p></figcaption>
-</figure>
 
 ### 
 
@@ -3223,14 +3019,6 @@ plans</p></li>
 </tbody>
 </table>
 
-**<u>Example Process steps for Development Phase</u>**
-
-<figure>
-<img src="media/image12.emf" />
-<figcaption><p><span id="_Toc136940882" class="anchor"></span>Figure 6:
-Example Process steps for Development Phase</p></figcaption>
-</figure>
-
 ## Delivery Phase
 
 ### SOC Handover
@@ -4079,14 +3867,6 @@ optimisation</p></li>
 </tbody>
 </table>
 
-**<u>Example Process steps for Delivery Phase</u>**
-
-<figure>
-<img src="media/image13.emf" />
-<figcaption><p><span id="_Toc136940883" class="anchor"></span>Figure 7:
-Example Process steps for Delivery Phase</p></figcaption>
-</figure>
-
 ## Improvement Phase
 
 This phase defines the need and steps required to fine tune or improve
@@ -4217,15 +3997,6 @@ Use Case change</p></li>
 </tbody>
 </table>
 
-**<u>Example Process steps for Improvement Phase</u>**
-
-<figure>
-<img src="media/image14.emf" />
-<figcaption><p><span id="_Toc136940884" class="anchor"></span>Figure 8:
-Example Process steps for Improvement Phase</p></figcaption>
-</figure>
-
-# 
 
 #  Best Practices
 
@@ -4326,15 +4097,8 @@ management) review the current state of the UCF. By having someone
 outside of the SOC provide a ‘fresh’ perspective on the UCF, additional
 points for improvement can be identified.
 
-# Appendix A – Use case catalogue template 
 
-![](media/image15.emf)
-
-# Appendix B – Request for use case form template 
-
-![](media/image16.emf)
-
-# Appendix C - Sources & References used 
+# Sources & References used 
 
 - <https://blogs.oracle.com/cloudsecurity/post/how-to-improve-security-monitoring-with-detection-engineering-program>
 
@@ -4350,64 +4114,7 @@ points for improvement can be identified.
 
 - <https://www.sans.org/white-papers/39685/>
 
-# Appendix D: Acronym Listing or Full Glossary
 
-<table>
-<colgroup>
-<col style="width: 23%" />
-<col style="width: 76%" />
-<col style="width: 0%" />
-</colgroup>
-<thead>
-<tr>
-<th>Term</th>
-<th colspan="2">Definition</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ATT&amp;CK</td>
-<td colspan="2">Attacker’s Tactics, Techniques, &amp; Common
-Knowledge</td>
-</tr>
-<tr>
-<td>AV</td>
-<td colspan="2">Antivirus</td>
-</tr>
-<tr>
-<td>CAPEC</td>
-<td colspan="2">Common Attack Pattern Enumeration and
-Classification</td>
-</tr>
-<tr>
-<td>SOC</td>
-<td colspan="2">Cyber Defense Center</td>
-</tr>
-<tr>
-<td>SOC</td>
-<td colspan="2">Security Operations Center</td>
-</tr>
-<tr>
-<td>TTP</td>
-<td colspan="2">Tactics, Techniques &amp; Procedures</td>
-</tr>
-<tr>
-<td>MSSP</td>
-<td>Managed Security Service Provider</td>
-<td></td>
-</tr>
-<tr>
-<td>OLA</td>
-<td>Operating Level Agreement</td>
-<td></td>
-</tr>
-<tr>
-<td>SLA</td>
-<td>Service Level Agreement</td>
-<td></td>
-</tr>
-</tbody>
-</table>
 
 # Trademarks and Disclaimers
 
