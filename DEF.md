@@ -1,0 +1,540 @@
+# 🛡️ Use Case & Detection Engineering Framework
+
+[![Version](https://img.shields.io/badge/Version-2.0-blue.svg)](https://github.com)
+[![Status](https://img.shields.io/badge/Status-Released-green.svg)](https://github.com)
+[![License](https://img.shields.io/badge/License-Cisco-orange.svg)](https://github.com)
+[![Framework](https://img.shields.io/badge/Framework-NIST%20CSF-purple.svg)](https://github.com)
+
+> **📅 November 23, 2024 | Version 2.0**
+
+---
+
+## 📋 Table of Contents
+
+- [🛡️ Use Case & Detection Engineering Framework](#️-use-case--detection-engineering-framework)
+  - [📋 Table of Contents](#-table-of-contents)
+  - [📖 About this Framework](#-about-this-framework)
+    - [📝 Document Information](#-document-information)
+    - [📚 Version History](#-version-history)
+    - [👥 Review History](#-review-history)
+  - [🎯 Introduction](#-introduction)
+    - [📄 Preface](#-preface)
+    - [👥 Audience](#-audience)
+    - [🔍 Scope](#-scope)
+  - [🏗️ Use Case & Detection Engineering Framework](#️-use-case--detection-engineering-framework-1)
+    - [🔍 Overview](#-overview)
+    - [❓ Why adopt a Use Case & Detection Engineering Framework?](#-why-adopt-a-use-case--detection-engineering-framework)
+    - [⚡ Principles of the Framework](#-principles-of-the-framework)
+    - [🧩 What does the Framework consist of?](#-what-does-the-framework-consist-of)
+    - [⚠️ Challenges of Creating & Managing Use Cases](#️-challenges-of-creating--managing-use-cases)
+  - [🎯 Drivers for Use Cases](#-drivers-for-use-cases)
+    - [🔄 Risk, Threats and Compliance Overview](#-risk-threats-and-compliance-overview)
+    - [🏢 Aligning to Business Context](#-aligning-to-business-context)
+    - [⚠️ Risk Drivers](#️-risk-drivers)
+    - [🎯 Threat Drivers](#-threat-drivers)
+    - [📜 Compliance Drivers](#-compliance-drivers)
+  - [🔄 Use Case and Detection Engineering Lifecycle](#-use-case-and-detection-engineering-lifecycle)
+    - [📋 Planning Phase](#-planning-phase)
+    - [⚙️ Development Phase](#️-development-phase)
+    - [🚀 Delivery Phase](#-delivery-phase)
+    - [🔧 Improvement Phase](#-improvement-phase)
+
+---
+
+## 📖 About this Framework
+
+### 📝 Document Information
+
+| **Field** | **Value** |
+|-----------|-----------|
+| **👤 Authors** | Kunal Hatode, Frank Hassenrueck, Matrix Chau |
+| **🏢 Change Authority** | Customer Experience, Cisco |
+| **📅 Current Version** | 2.0 |
+| **📆 Last Updated** | November 23, 2024 |
+
+### 📚 Version History
+
+| **Version** | **📅 Date** | **📊 Status** | **🔄 Changes** |
+|-------------|-------------|---------------|----------------|
+| 0.1 | 13/04/2021 | Draft | First Draft |
+| 1.0 | 14/04/2021 | Release | First Release |
+| 1.1 | 25/04/2021 | Revision | Minor amendments |
+| 1.2 | 15/06/2021 | Revision | Minor amendments |
+| 1.3 | 24/08/2021 | Draft | Overhaul amendments |
+| 1.4 | 07/09/2021 | Released | Minor amendments |
+| 1.5 | 14/04/2022 | Released | Minor amendments |
+| **2.0** | **06/06/2023** | **Revision** | **Major amendments** |
+
+### 👥 Review History
+
+| **👤 Reviewer** | **📋 Version** | **📅 Date** |
+|-----------------|----------------|-------------|
+| Kunal Hatode | 1.0 | 13/04/2021 |
+| Kunal Hatode | 1.5 | 13/04/2022 |
+| Kunal Hatode | 2.0 | 06/06/2023 |
+
+---
+
+## 🎯 Introduction
+
+### 📄 Preface
+
+In today's ever-evolving digital landscape, organizations face a multitude of sophisticated and persistent cyber threats that can compromise their sensitive data, disrupt operations, and damage their reputation. To effectively combat these threats, a robust **Use Case and Detection Engineering Framework** is essential.
+
+```mermaid
+graph TB
+    A[🎯 Planning Phase] --> B[⚙️ Development Phase]
+    B --> C[🚀 Delivery Phase]
+    C --> D[🔧 Improvement Phase]
+    D --> A
+    
+    style A fill:#e1f5fe
+    style B fill:#f3e5f5
+    style C fill:#e8f5e8
+    style D fill:#fff3e0
+```
+
+This comprehensive guide aims to provide security professionals, incident responders, and IT teams with a holistic understanding of the key principles, strategies, and best practices involved in building and maintaining an effective security monitoring and incident response program.
+
+**🏗️ Framework Phases:**
+
+- **📋 Planning Phase**: Establishing foundation and objectives
+- **⚙️ Development Phase**: Building technical detection capabilities  
+- **🚀 Delivery Phase**: Implementation and activation
+- **🔧 Improvement Phase**: Continuous enhancement and optimization
+
+The journey begins by establishing a strong foundation in the **Planning Phase**, where organizations define their security objectives, assess risks, and identify the scope of their security monitoring program. This phase emphasizes the importance of collaboration between stakeholders, ensuring alignment with business objectives, and selecting appropriate tools and technologies to support the monitoring efforts.
+
+The guide then delves into the **Development Phase**, where security use cases and detection rules are developed, tested, and fine-tuned. It highlights the significance of conducting thorough technical analysis, considering business cases, and involving stakeholders throughout the development process. The authors stress the need for well-defined and well-designed playbooks, as well as the prerequisites for successful automation implementation, including suitable tools, data integration, process readiness, and organizational preparedness.
+
+The **Delivery Phase** focuses on the handover of use cases to the security monitoring team, rule activation, and the crucial aspect of monitoring rule behavior and metrics. It stresses the need for vigilant monitoring of false positives and false negatives, ensuring the use cases are delivering the desired outcomes and providing insights to drive business decisions.
+
+Cataloging the use cases and rules is explored in-depth in the guide's chapters, as a crucial aspect of maintaining an organized and efficient security monitoring program. The authors emphasize the importance of clear and comprehensive catalogs, offering guidance on creating effective use case quality ratings and release benchmarks. The inclusion of mapping the use cases to the **MITRE ATT&CK framework** adds an additional layer of insight and enables organizations to identify and prioritize security gaps.
+
+The **Improvement Phase** focuses on the continuous enhancement of the use cases and rules in response to technical bugs, deficiencies in output, and the need for periodic review. The guide emphasizes the importance of conducting regular reviews, proactive attack simulations, and acceptance testing to ensure the effectiveness and relevance of the security monitoring program. It also outlines the process of decommissioning use cases that are no longer required, highlighting the need for proper offloading and communication with stakeholders.
+
+Throughout the guide, key roles and stakeholders are identified, providing a clear understanding of the responsibilities and contributions of various teams involved in security monitoring and incident response. This holistic approach ensures effective collaboration and efficient handling of security incidents.
+
+> ⚠️ **Important Note**: This guide is a comprehensive framework, encompassing a wide range of concepts, methodologies, and best practices. It serves as a valuable resource for organizations seeking to establish or enhance their security monitoring and incident response capabilities.
+
+By following the principles and recommendations outlined in this guide, organizations can build a resilient and proactive security posture, mitigating risks and responding effectively to emerging threats.
+
+### 👥 Audience
+
+This document is intended for:
+
+| **👤 Role** | **🎯 Focus Area** |
+|-------------|-------------------|
+| **🔒 Security Managers** | Strategic oversight and governance |
+| **📊 SOC Managers** | Operational management and coordination |
+| **👨‍💻 SOC Analysts** | Day-to-day monitoring and analysis |
+| **⚙️ Detection Engineers** | Technical development and implementation |
+| **🛡️ Security Professionals** | Overall security operations |
+
+We hope that this guide will serve as a valuable reference and practical companion for security professionals, incident responders, and IT teams as they navigate the challenging landscape of security monitoring and incident response.
+
+### 🔍 Scope
+
+This deliverable is a **Use Case Framework** to address the detection of cyber threats & attack tactics techniques and procedures appropriate to the SOC. The objective of building a Use Case Framework is to better protect the organization's valuable assets by designing and developing detection use cases using a holistic approach that connects **Risk**, **Threat** & **compliance requirements**.
+
+```mermaid
+graph LR
+    A[🎯 Risk] --> D[🛡️ Use Case Framework]
+    B[⚠️ Threat] --> D
+    C[📜 Compliance] --> D
+    D --> E[🔍 Detection Use Cases]
+    
+    style D fill:#f9f,stroke:#333,stroke-width:3px
+```
+
+> ⚠️ **Disclaimer**: Following the guidelines and recommendations in this document does not guarantee a secure environment, or that all security incidents will be prevented. Absolute security is impossible to achieve on any open network. However, security risks can be reduced by establishing a good security policy together with sound administration practices; monitoring and responding to security incidents; testing and evaluating security; and improving, securing and managing security weaknesses on an on-going basis. Cisco does not recommend deploying security technologies without associated security policies.
+
+---
+
+## 🏗️ Use Case & Detection Engineering Framework
+
+### 🔍 Overview
+
+```mermaid
+mindmap
+  root((🛡️ Detection Engineering))
+    🎯 Use Cases
+      📋 Planning
+      ⚙️ Development  
+      🚀 Delivery
+      🔧 Improvement
+    🔍 Detection Rules
+      📊 Analytics
+      🔎 Signatures
+      📈 Correlation
+    📋 Playbooks
+      🚨 Response
+      🔄 Automation
+      📞 Escalation
+```
+
+In the context of cybersecurity, a **use case** describes a potential security threat or incident and defines the steps, actions, or behaviors that indicate the presence of that threat. It helps in identifying, monitoring, and detecting security incidents or suspicious activities within an organization's network or systems.
+
+**Detection engineering**, on the other hand, refers to the process of designing and developing effective methods and techniques to identify and respond to security threats and incidents. It involves creating and implementing:
+
+- 🔍 **Detection rules**
+- 🧠 **Logic patterns**
+- 🔎 **Search strings**
+- 📝 **Detection signatures**
+
+These enable security monitoring systems to identify and generate alerts for suspicious activities or potential security breaches. Detection engineering also encompasses the development of **response playbooks**, which provide predefined steps and actions to be taken in response to specific security events or incidents.
+
+The **use case and detection engineering framework** combines these two concepts to create a structured approach for developing, managing, and improving security monitoring capabilities. This framework emphasizes the importance of proactive identification, monitoring, and response to security threats.
+
+### ❓ Why adopt a Use Case & Detection Engineering Framework?
+
+Essentially, use cases describe manifestations of threats from a high level (the modus operandi of the cyber criminals) to the lowest level (concrete security events in the infrastructure such as exploits, failed logins, etc.). Use cases also describe follow-up actions (incident response) and are tied with business drivers to show how security monitoring reduces risk in the organization.
+
+```mermaid
+graph TD
+    A[🎯 High Level Threats] --> B[🔍 Mid Level Indicators]
+    B --> C[📊 Low Level Events]
+    C --> D[🚨 Incident Response]
+    D --> E[💼 Business Value]
+    
+    style A fill:#ffebee
+    style B fill:#fff3e0
+    style C fill:#e8f5e8
+    style D fill:#e3f2fd
+    style E fill:#f3e5f5
+```
+
+Within the complexity of the security architecture, framework can provide structure and overview. Such frameworks enable control over the development of the use cases and provide insight into identify how well an organization can defend against cyber threats.
+
+**🎯 The use case framework should allow the SOC:**
+
+- ✅ To ensure stakeholder objectives are met uniformly
+- ✅ To capture gaps and challenges early on during the creation of use cases
+- ✅ To have a holistic "frame of reference" where detection use cases can be categorized into
+- ✅ To engineer detection capabilities in a consistent & methodological manner
+- ✅ To quickly see where use cases are lacking and need more attention
+- ✅ To facilitate a phased approach of expanding new use cases based on a large variety of inputs and priorities in the form of Use Case Roadmap
+
+### ⚡ Principles of the Framework
+
+```mermaid
+graph LR
+    A[💼 Business Requirements] --> B[🛡️ Use Case Framework]
+    C[⚠️ Risk Appetite] --> B
+    D[📜 Compliance] --> B
+    E[🔄 Systematic Process] --> B
+    F[📊 Visibility Assessment] --> B
+    G[🎯 Ad-hoc Reduction] --> B
+    H[🔄 Redundancy Elimination] --> B
+    I[📋 State Management] --> B
+    
+    style B fill:#f9f,stroke:#333,stroke-width:3px
+```
+
+The key principles driving this framework:
+
+- 🎯 **Business-Driven**: The creation of use cases should be driven by the organisation's business requirements
+- ⚖️ **Risk-Aligned**: The use cases must align with the business's risk appetite over any form of asset  
+- 📜 **Compliance-Focused**: The use case framework should provide structured control over the compliance requirements of the organisation
+- 🔄 **Systematic**: The creation of use cases must follow a systematic process to eliminate or reduce errors
+- 📊 **Visibility-Enabling**: The use case framework should create a foundation for the ability to assess the state of visibility and detection capability
+- 🎯 **Anti-Ad-hoc**: The use case framework must reduce the ad hoc detection of threats for the organisation
+- 🔄 **Efficiency-Driven**: The use case framework should eliminate redundant & duplicate methods of managing use cases
+- 📋 **State-Aware**: The management of the use cases must articulate the state of the use cases at any given point of time
+
+### 🧩 What does the Framework consist of?
+
+The framework includes:
+
+| **🧩 Component** | **📝 Description** |
+|------------------|-------------------|
+| **🎯 Fundamentals** | How business risk, threats and compliance requirements drive the framework |
+| **🔄 Lifecycle** | Practical Use Case & Detection Engineering lifecycle management process |
+| **⚙️ Development Guide** | Practical guide to develop correlation and detection rules in SIEM |
+| **📚 Catalog Guide** | Suggested guide to maintain use cases and SIEM Rules in catalogue format |
+| **📋 Templates** | Series of templates, processes and conventions that support the framework |
+
+### ⚠️ Challenges of Creating & Managing Use Cases
+
+```mermaid
+graph TB
+    A[⚠️ Use Case Challenges] --> B[📦 Split Coverage]
+    A --> C[🏷️ No Naming Conventions]
+    A --> D[🎯 Attack-Centric Bias]
+    A --> E[🤖 SOAR Integration Issues]
+    A --> F[🏢 Vendor Lock-in]
+    
+    style A fill:#ffebee
+    style B fill:#fff3e0
+    style C fill:#fff3e0
+    style D fill:#fff3e0
+    style E fill:#fff3e0
+    style F fill:#fff3e0
+```
+
+**🔍 Key Challenges Identified:**
+
+1. **📦 Split Coverage**: Most out-of-the-box use cases are split up from each other based on their rule content package which can be put (after some analysis of the detection logic) under the same "use case" as they have the same detection scope.
+
+2. **🏷️ Naming Issues**: Most SIEM out-of-the-box (and later custom added rules) do not have an overarching naming convention over all rules.
+
+3. **🎯 Detection Bias**: Most use case approaches have an Attack-centric or quantitative detection bias. Most SIEM Vendors have attempted to organize use cases in a Use Case Framework that primarily focuses on a single limited threat model (kill chain or ATT&CK Framework) this misses critical categories like Self-monitoring, localized anomaly detection (that is not attack centric) and distinctions between quantitative threat modelling and qualitative threat modelling.
+
+4. **🤖 SOAR Integration**: Use Cases are hard to align with a SOAR playbooks platform without a framework. Most vendors fail to accommodate the emergence of SOAR technologies that are trying to connect automated or semi-automated playbooks to SIEM use cases.
+
+5. **🏢 Vendor Complexity**: SIEM Vendor Taxonomy overly complex or not generalizable. Many SIEM vendors have attempted to standardize detection through taxonomy of detection categories, but these categories are generally limited only to the SIEM vendor itself and hard to generalize to other detection technologies of other vendors like IDS, IPS, UBA and others.
+
+---
+
+## 🎯 Drivers for Use Cases
+
+Before going any further, it is important to provide a definition of use cases. This is necessary, because of the fact that the term is used to describe a variety of elements in different publications.
+
+> 📝 **Definition**: "A use case is a security monitoring scenario that is aimed at the detection of manifestations of a cyber threat"
+
+A use case has a **strategical**, **tactical** and **operational** component. This definition emphasizes the fact that the focus of the framework is on the **'detect'** and **'respond'** phase of the NIST cybersecurity framework.
+
+```mermaid
+graph LR
+    A[🎯 Strategic] --> D[🛡️ Use Case]
+    B[⚔️ Tactical] --> D
+    C[⚙️ Operational] --> D
+    D --> E[🔍 Detect]
+    D --> F[🚨 Respond]
+    
+    style D fill:#f9f,stroke:#333,stroke-width:3px
+    style E fill:#e8f5e8
+    style F fill:#ffebee
+```
+
+Naturally, the events and incidents that flow from the security monitoring architecture can be used to improve protection mechanisms or further refine the threat identification. While threats are a core driver for security monitoring, they are not the only driver. Other aspects of the organizational environment must be considered as well such as **risk** and **compliance** obligations.
+
+Developing the right use cases or detection rules, and having an effective development and implementation process, is more than half the battle in reducing response time to a potential attack and minimizing its impact.
+
+**🎯 Use cases must be customized for each organization**, reflecting:
+
+- 🏢 Organization's current unique requirements and risk, threat and compliance profile
+- 🌍 Current threat landscape, based on the organization's industry vertical  
+- 💾 Types of assets owned
+- 🌐 Organization's operating regions, applications and services used
+
+### 🔄 Risk, Threats and Compliance Overview
+
+```mermaid
+graph TB
+    A[⚠️ Risks] --> D[🛡️ Security Monitoring]
+    B[🎯 Threats] --> D
+    C[📜 Compliance] --> D
+    
+    A --> A1[💰 Financial Loss]
+    A --> A2[🏢 Reputation Damage]
+    A --> A3[⚙️ Operational Disruption]
+    
+    B --> B1[🌐 External Actors]
+    B --> B2[👤 Internal Actors]
+    B --> B3[🦠 Malware]
+    
+    C --> C1[🌍 International Standards]
+    C --> C2[🏛️ National Regulations]
+    C --> C3[🏭 Industry Requirements]
+    
+    style D fill:#f9f,stroke:#333,stroke-width:3px
+```
+
+**⚠️ Risks**
+
+Cybersecurity risk is the probability of exposure or loss resulting from a cyber-attack or data breach on your organization. A better, more encompassing definition is the potential loss or harm related to technical infrastructure, use of technology or reputation of an organization.
+
+Organizations are becoming more vulnerable to cyber threats due to the increasing reliance on computers, networks, programs, social media and data globally. Data breaches, a common cyber-attack, have massive negative business impact and often arise from insufficiently protected data.
+
+**🎯 Threats**
+
+Any potential occurrence that may cause an undesirable or unwanted outcome for an organization or for a specific asset is a threat. Threats are any action or inaction that could cause damage, destruction, alteration, loss, or disclosure of assets or that could block access to or prevent maintenance of assets.
+
+Cyber threats refer to the possibility of a successful cyber-attack that aims to gain unauthorized access, damage, disrupt, or steal an information technology asset, computer network, intellectual property or any other form of sensitive data.
+
+**Known threat sources include:**
+- 🏛️ Hostile nations
+- 💀 Terrorist groups  
+- 🕵️ Corporate spies
+- 🎭 Hacktivists
+- 😠 Disgruntled insiders
+- 🤷 Accidental actions of authorized users
+
+**📜 Compliance**
+
+As the number and severity of cyber-attacks increases, industry standards organizations and governments seek to enforce cybersecurity by establishing more stringent compliance requirements. In cybersecurity, compliance means creating a program that establishes risk-based controls to protect the integrity, confidentiality, and accessibility of information stored, processed, or transferred.
+
+Organizations subject to industry or regional cybersecurity regulations are required by law to meet compliance and take the prescribed actions following the discovery of a data breach.
+
+### 🏢 Aligning to Business Context
+
+Each line of business has their own risks and threats. For example, the threats of banking firm is not the same as a healthcare or Government entity. So, understanding the line of business would help well in plotting the threat actors and attack motivation.
+
+```mermaid
+graph TD
+    A[🏢 Business Objectives] --> B[💻 Technology Decisions]
+    B --> C[💾 IT Assets]
+    C --> D[👥 People]
+    C --> E[📊 Data]
+    
+    F[⚠️ Vulnerabilities] --> G[🎯 Threat Agents]
+    G --> H[💥 Exploitation]
+    
+    C --> F
+    D --> F
+    E --> F
+    
+    I[🛡️ Safeguards] --> J[🔒 Risk Mitigation]
+    J --> C
+    J --> D
+    J --> E
+    
+    style A fill:#e3f2fd
+    style I fill:#e8f5e8
+```
+
+It's important to understand what the organisation business objectives are specifically for a given period of time. As these business objectives influence and shape the technology decisions. The technology decisions in turn become the assets in the shape of IT equipment, People and Data that must be safeguarded every single day because they are bound to have vulnerabilities that possess the risk of being exploited by Threat agents.
+
+**🔄 Cyber Elements Relationship:**
+- **🎯 Threats** exploit **⚠️ vulnerabilities**, which results in **📊 exposure**
+- **📊 Exposure** is **⚠️ risk**, and **⚠️ risk** is mitigated by **🛡️ safeguards**  
+- **🛡️ Safeguards** protect **💾 assets** that are endangered by **🎯 threats**
+
+Businesses also evolve continuously. Thus, it is possible that changes to the business layer of the use case may be required. These changes may also need to be reflected in operational implementation. For example, changes in demands regarding use case output may lead to new assets being monitored or new monitoring rules being implemented.
+
+<details>
+<summary>🔍 <strong>Defining Threats and Risks - Click to expand</strong></summary>
+
+**Defining Threats and Risks:**
+
+To grasp the essence of threats and risks, let's start by defining each concept individually. In the realm of cybersecurity, a **threat** refers to a specific type of malicious actor, an entity, or an event that has the potential to exploit vulnerabilities and compromise the security of computer systems, networks, or data. These threats may come in the form of hackers, malware, viruses, phishing attacks, or social engineering tactics. 
+
+On the other hand, a **risk** is the potential for loss, harm, or negative consequences resulting from the exploitation of vulnerabilities by threats. Risks encompass assessing the likelihood and potential impact of threats on an organization's information assets, including data confidentiality, integrity, and availability.
+
+**Threats: The 'What' of Cybersecurity:**
+
+Imagine a medieval castle fortified with high walls, towers, and guards. In the context of cybersecurity, threats can be likened to the external forces attempting to breach the castle's defenses. These forces could be hostile invaders, spies, or even traitors within the castle walls. Similarly, cybersecurity threats are the specific instances of potential harm, often associated with intentional malicious activities or accidental occurrences.
+
+**Risks: The 'How' and 'Why' of Cybersecurity:**
+
+While threats focus on the external forces attempting to breach our digital defenses, risks provide a broader perspective by considering the overall uncertainty and potential impact to our information assets. In our castle analogy, risks can be compared to the assessment of the castle's vulnerability, the potential impact of an invasion, and the consequences for the kingdom.
+
+**The Interplay Between Threats and Risks:**
+
+While threats and risks are distinct concepts, they are intertwined and mutually influence each other in the realm of cybersecurity. Threats are specific manifestations of potential harm, often originating from intentional malicious activities or accidental occurrences. Risks, on the other hand, encompass a broader range of potential threats, vulnerabilities, and their associated consequences.
+
+</details>
+
+### ⚠️ Risk Drivers
+
+All IT systems have risk. There is no way to eliminate 100 percent of all risks. Instead, upper management and key stakeholders must decide which risks are acceptable and which are not. Determining which risks are acceptable requires detailed and complex asset and risk assessments.
+
+```mermaid
+graph LR
+    A[📊 Risk Assessment] --> B[📈 Quantitative]
+    A --> C[📋 Qualitative]
+    B --> D[💰 Monetary Figures]
+    C --> E[📝 Subjective Values]
+    D --> F[🔄 Hybrid Analysis]
+    E --> F
+    
+    style A fill:#fff3e0
+    style F fill:#e8f5e8
+```
+
+There are **two risk assessment methodologies**:
+
+- **📈 Quantitative**: Assigns real monetary figures to the loss of an asset
+- **📋 Qualitative**: Assigns subjective and intangible values to the loss of an asset
+
+Both methods are necessary for a complete risk analysis. Most environments employ a **hybrid** of both risk assessment methodologies in order to gain a balanced view of their security concerns.
+
+<details>
+<summary>🔍 <strong>Types of Risk Drivers - Click to expand</strong></summary>
+
+**📊 Quantitative & Qualitative Pertinence**
+
+The quantitative method results in concrete probability percentages. That means the end result is a report that has monetary figures for levels of risk, potential loss, cost of countermeasures, and value of safeguards. This report is usually fairly easy to understand, especially for anyone with knowledge of spreadsheets and budget reports.
+
+Qualitative risk analysis is more scenario based than it is calculator based. Rather than assigning exact monetary figures to possible losses, you rank threats on a scale to evaluate their risks, costs, and effects. The method of combining quantitative and qualitative analysis into a final assessment of organizational risk is known as **hybrid assessment** or **hybrid analysis**.
+
+**💼 Business Impact Analysis**
+
+Business impact analysis (BIA) is a systematic process to determine and evaluate the potential effects of an interruption to critical business operations as a result of a disaster, accident or emergency. A BIA is an essential component of an organization's business continuance plan.
+
+One of the basic assumptions behind BIA is that every component of the organization is reliant upon the continued functioning of every other component, but that some are more crucial than others and require a greater allocation of time, effort and funds in the wake of a disaster.
+
+</details>
+
+### 🎯 Threat Drivers
+
+Threat drivers are the factors or conditions that contribute to the emergence, growth, or impact of threats in the cybersecurity landscape. They provide insight into the motivations, capabilities, and techniques of threat actors, helping organizations understand the potential risks they face.
+
+```mermaid
+graph TB
+    A[🎯 Threat Drivers] --> B[🌐 External Actors]
+    A --> C[👤 Internal Actors]  
+    A --> D[⚠️ Vulnerabilities]
+    A --> E[💣 Exploits]
+    A --> F[🎭 Social Engineering]
+    A --> G[🦠 Malware]
+    A --> H[🔥 Advanced Persistent Threats]
+    
+    style A fill:#ffebee
+```
+
+**Common threat drivers include:**
+
+| **🎯 Threat Driver** | **📝 Description** |
+|----------------------|-------------------|
+| **🌐 External Actors** | Individuals, groups, or organizations outside the target organization |
+| **👤 Internal Actors** | Individuals within an organization who pose a security risk |
+| **⚠️ Vulnerabilities** | Weaknesses or flaws in software, hardware, or system configurations |
+| **💣 Exploits** | Tools, techniques, or malicious code that take advantage of vulnerabilities |
+| **🎭 Social Engineering** | Psychological manipulation techniques to deceive individuals |
+| **🦠 Malware** | Malicious software designed to gain unauthorized access or disrupt systems |
+| **🔥 APTs** | Sophisticated, targeted attacks by well-resourced threat actors |
+
+<details>
+<summary>🔍 <strong>Types of Threat Drivers - Click to expand</strong></summary>
+
+**🧠 Threat Intelligence**
+
+Cyber threat intelligence is what cyber threat information becomes once it has been collected, evaluated in the context of its source and reliability, and analysed through rigorous and structured tradecraft techniques by those with substantive expertise and access to all-source information.
+
+**🎯 Threat Modelling**
+
+Threat modelling is a crucial component of any robust use case framework as it provides a systematic approach to identify, assess, and mitigate potential threats and risks. By incorporating threat modelling into the use case development process, organizations can enhance the security of their systems, applications, and infrastructure.
+
+**🔍 Threat Hunting**
+
+Threat hunting is the proactive cybersecurity practice of searching for hidden threats already in an organization's environment. Threat hunting is necessary because many adversaries engineer their attacks to bypass an organization's perimeter and defences in order to sneak in undetected.
+
+**📚 Lessons Learned From Incident Response**
+
+Incident response activities originating from security alerts are also input into the use case management process. This loopback mechanism ensures that monitoring is effective and efficient. After all, breaches must be detected and false-positives should be avoided as much as possible.
+
+</details>
+
+### 📜 Compliance Drivers
+
+There are dozens of acronyms, hundreds of controls, and many business owners find themselves completely overwhelmed with compliance obligations. Compliance requirements vary and can be imposed by law, regulatory bodies, and even private industry groups such as the Payment Card Industry.
+
+```mermaid
+graph TB
+    A[📜 Compliance Drivers] --> B[🌍 International]
+    A --> C[🏛️ National]
+    A --> D[🏭 Industry Sector]
+    A --> E[🏢 Internal Policies]
+    
+    B --> B1[ISO 27001]
+    B --> B2[GDPR]
+    B --> B3[Common Criteria]
+    
+    C --> C1[Qatar CSF]
+    C --> C2[Cyber Essentials]
+    C --> C3[BSI IT-Grundschutz]
+    
+    D --> D1[PCI DSS]
+    D -->
