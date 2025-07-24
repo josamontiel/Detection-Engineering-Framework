@@ -43,14 +43,6 @@ Version 2.0
 | Kunal Hatode       | 1.5         | 13/04/2022 |
 | Kunal Hatode       | 2.0         | 06/06/2023 |
 
-## Document Conventions
-
-| <img src="media/image3.jpeg" style="width:0.36299in;height:0.31175in" /> | Caution—Alerts readers to be careful. In this situation, you might do something that could result in equipment damage or loss of data. |
-|----|----|
-| <img src="media/image4.jpeg" style="width:0.43129in;height:0.28958in" /> | Note—Alerts readers to take note. Notes contain helpful suggestions or references to material not covered in the document. |
-| <img src="media/image5.jpeg" style="width:0.33331in;height:0.32622in" /> | Timesaver—Alerts the reader that they can save time by performing the action described in the paragraph affixed to this icon. |
-| <img src="media/image6.jpeg" style="width:0.36628in;height:0.34826in" /> | Tip—Alerts the reader that the information affixed to this icon will help them solve a problem. The information might not be troubleshooting or even an action, but it could be useful information similar to a Timesaver. |
-| <img src="media/image7.jpeg" style="width:0.42279in;height:0.30882in" /> | Warning—Alerts readers of a situation that could cause bodily injury. They need to be aware of the hazards involved with electrical circuitry and familiarize themselves with standard practices for preventing accidents. |
 
 # Introduction
 
@@ -123,7 +115,7 @@ emerging threats.
 ## Audience
 
 This document is intended for security managers, SOC managers, SOC
-analysts, and professionals within the SOC, that are responsible for
+analysts, Detection Engineers and professionals within the SOC, that are responsible for
 focusing on the design, capability and maturity of use case development
 and security monitoring. We hope that this guide will serve as a
 valuable reference and practical companion for security professionals,
@@ -270,20 +262,19 @@ against cyber threats. The use case framework should allow the SOC:
 
 ## Challenges of Creating & Managing Use Cases 
 
-- Out-of-the-box use cases are split-up while covering same scope. Most
-  out-of-the-box use cases are split up from each other based on their
+- **Out-of-the-box use cases are split-up while covering same scope**  
+  Most out-of-the-box use cases are split up from each other based on their
   rule content package which can be put (after some analysis of the
   detection logic) under the same "use case" as they have the same
   detection scope.
 
-- No naming conventions or pre-determined directory structure Most SIEM
-  out-of-the-box (and later custom added rules) do not have an
+- **No naming conventions or pre-determined directory structure**  
+  Most SIEM out-of-the-box (and later custom added rules) do not have an
   overarching naming convention over all rules.
 
-- Most use case approaches have an Attack-centric or quantitative
-  detection bias.
-
-- Most SIEM Vendors have attempted to organize use cases in a Use Case
+- **Most use case approaches have an Attack-centric or quantitative
+  detection bias**  
+  Most SIEM Vendors have attempted to organize use cases in a Use Case
   Framework that primarily focuses on a single limited threat model
   (kill chain or ATT&CK Framework) this misses critical categories like
   Self-monitoring, localized anomaly detection (that is not attack
@@ -291,15 +282,16 @@ against cyber threats. The use case framework should allow the SOC:
   qualitative threat modelling. This as a result will create a
   attack-centric and quantitative threat detection bias.
 
-- Use Cases are hard to align with a SOAR playbooks platform without a
-  framework. Most vendors fail to accommodate the emergence of SOAR
+- **Use Cases are hard to align with a SOAR playbooks platform without a
+  framework**  
+  Most vendors fail to accommodate the emergence of SOAR
   technologies that are trying to connect automated or semi-automated
   playbooks to SIEM use cases. Without a proper organized rule set
   according to some form of framework mapping use cases to playbooks
   becomes increasingly challenging.
 
-- SIEM Vendor Taxonomy overly complex or not generalizable. Many SIEM
-  vendors have attempted to standardize detection through taxonomy of
+- **SIEM Vendor Taxonomy overly complex or not generalizable**  
+  Many SIEM vendors have attempted to standardize detection through taxonomy of
   detection categories, but these categories are generally limited only
   to the SIEM vendor itself and hard to generalize to other detection
   technologies of other vendors like IDS, IPS, UBA and others.
@@ -314,7 +306,7 @@ In this document, the following definition for uses cases is used: “a
 use case is a security monitoring scenario that is aimed at the
 detection of manifestations of a cyber threat”. A use case has a
 strategical, tactical and operational component. This definition
-emphasizes the fact that the focus of the framework is on the ‘detect’
+emphasizes the fact that the focus of the framework is on the ‘detect’ and ‘respond’
 phase of the NIST cybersecurity framework. Naturally, the events and
 incidents that flow from the security monitoring architecture can be
 used to improve protection mechanisms or further refine the threat
@@ -448,7 +440,10 @@ post, we will delve into the world of cybersecurity and explore the
 comparative nature of threats and risks, providing you with valuable
 insights to enhance your cybersecurity knowledge.
 
-Defining Threats and Risks:
+<details>
+  <summary>Defining Threats and Risks</summary>
+
+  **Defining Threats and Risks:**
 
 To grasp the essence of threats and risks, let's start by defining each
 concept individually. In the realm of cybersecurity, a threat refers to
@@ -553,7 +548,7 @@ and their associated consequences. Threats focus on understanding the
 methods and techniques employed by malicious actors, while risks provide
 a comprehensive understanding of the overall risk landscape.
 
-<span id="_Toc136940837" class="anchor"></span>
+</details>
 
 ### Risk Drivers
 
@@ -583,7 +578,10 @@ assessments, results, decisions, and outcomes must be understood and
 approved by upper management as an element in providing prudent due
 care.
 
-**Quantitative & Qualitative Pertinence**
+<details>
+  <summary>Types of Risk Drivers</summary>
+
+- **Quantitative & Qualitative Pertinence**
 
 The quantitative method results in concrete probability percentages.
 That means the end result is a report that has monetary figures for
@@ -611,7 +609,7 @@ stakeholders may ask the Security operations team to keep those IT
 systems with high risk factor to be kept under observation for anomalous
 activities.
 
-**Business Impact Analysis**
+- **Business Impact Analysis**
 
 Business impact analysis (BIA) is a systematic process to determine and
 evaluate the potential effects of an interruption to critical business
@@ -633,6 +631,7 @@ but they represent different steps in a business continuity plan. BIA
 analysis may also invoke stakeholders to ask the Security operations
 team to keep those IT systems with high Impact factor to be kept under
 observation for outage or anomalous activities.
+</details>
 
 ### Threat Drivers
 
@@ -687,7 +686,10 @@ advanced malware, zero-day exploits, social engineering, and lateral
 movement within a network. APTs are often associated with nation-state
 actors or highly organized cybercriminal groups
 
-**Threat Intelligence**
+<details>
+  <summary>Types of Threat Drivers</summary>
+
+  **Threat Intelligence**
 
 Cyber threat intelligence is what cyber threat information becomes once
 it has been collected, evaluated in the context of its source and
@@ -702,7 +704,7 @@ produce accurate, timely, and relevant intelligence. Threat intelligence
 or information about any applicable threat to the business assets are
 known to be a major contributor to the development of the use cases.
 
-**Threat Modelling**
+- **Threat Modelling**
 
 Threat modelling is a crucial component of any robust use case framework
 as it provides a systematic approach to identify, assess, and mitigate
@@ -772,7 +774,7 @@ This helps ensure that use cases are designed with security in mind,
 protecting systems, data, and assets from potential threats and
 vulnerabilities.
 
-**Threat Hunting**
+- **Threat Hunting**
 
 Threat hunting is the proactive cybersecurity practice of searching for
 hidden threats already in an organization’s environment. Threat hunting
@@ -824,7 +826,7 @@ management for use cases. Similar to red team testing and security
 incident response, hunting activities can be input for changing existing
 use cases or creation of new use cases.
 
-**Lessons Learned From Incident Response**
+- **Lessons Learned From Incident Response**
 
 Incident response activities originating from security alerts are also
 input into the use case management process. This loopback mechanism
@@ -835,7 +837,7 @@ used for enhancing existing use cases or creating new use cases. The
 latter is true when the initial trigger for incident response did not
 originate from the security monitoring process.
 
-<span id="_Toc136940839" class="anchor"></span>
+</details>
 
 ### Compliance Drivers
 
@@ -858,30 +860,35 @@ compliance departments, may require changes to SOC use cases. For
 example, new output may be required and thus, new monitoring rules must
 be implemented to deliver such output.
 
-**International Cybersecurity Regulations**
+<details>
+<summary>Types of Compliance Drivers</summary>
+  
+-  **International Cybersecurity Regulations**
 
 Certain compliance standards are adopted by the organisation’s due to
 regulations that are not limited by the boundaries of a nation. Examples
 of such are ISO 27001, GDPR, Common Criteria.
 
-**National Cybersecurity Regulations**
+- **National Cybersecurity Regulations**
 
 Compliance standards that are imposed or suggested by the government of
 the country. Examples of such are Qatar CSF, Cyber Essentials, BSI
 IT-Grundschutz,
 
-**Operating Sector Regulations**
+- **Operating Sector Regulations**
 
 Industry specific standards must be followed by the organisation to
 comply with obligations bestowed on them to be able to operate their
 business. Examples of such are PCI DSS or IEC 62443.
 
-**Internal Information Management Policies**
+- **Internal Information Management Policies**
 
 Organizational specific policies or set of rules mandated by the
 organisation’s internal information security department.
+</details>
 
- 
+---
+
 
 # Use Case and Detection Engineering Lifecycle
 
@@ -1036,7 +1043,6 @@ availability and quality of data sources, the feasibility of
 implementation within existing infrastructure, and the expected impact
 on operational
 
-<span id="_Toc136940842" class="anchor"></span>
 
 ### Contextual Feasibility Analysis
 
@@ -4115,23 +4121,3 @@ points for improvement can be identified.
 - <https://www.sans.org/white-papers/39685/>
 
 
-
-# Trademarks and Disclaimers
-
-IF THIS DOCUMENT IS PROVIDED AS A DELIVERABLE IN ACCORDANCE WITH THE
-CISCO TERMS AND CONDITIONS ASSOCIATED WITH A PURCHASED CISCO SERVICE
-(“TERMS”) THEN THIS DOCUMENT IS PRESENTED SUBJECT TO THOSE TERMS. IN ALL
-OTHER EVENTS, THIS DOCUMENT IS PROVIDED “AS-IS” WITHOUT WARRANTY OF ANY
-KIND, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION, THOSE OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT
-OR ARISING FROM A COURSE OF DEALING, USAGE, OR TRADE PRACTICE.
-
-Cisco and the Cisco logo are trademarks or registered trademarks of
-Cisco and/or its affiliates in the U.S. and other countries. To view a
-list of Cisco trademarks, go to this URL:
-[www.cisco.com/go/trademarks](http://www.cisco.com/go/trademarks).
-Third-party trademarks mentioned are the property of their respective
-owners. The use of the word partner does not imply a partnership
-relationship between Cisco and any other company. (1110R)
-
-© 2025 Cisco and/or its affiliates. All rights reserved.
