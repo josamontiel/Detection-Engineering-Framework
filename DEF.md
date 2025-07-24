@@ -1,21 +1,17 @@
-# 🛡️ Use Case & Detection Engineering Framework
+# 🛡️ Detection Engineering Framework
 
-[![Version](https://img.shields.io/badge/Version-2.0-blue.svg)](https://github.com)
 [![Status](https://img.shields.io/badge/Status-Released-green.svg)](https://github.com)
-[![License](https://img.shields.io/badge/License-Cisco-orange.svg)](https://github.com)
-[![Framework](https://img.shields.io/badge/Framework-NIST%20CSF-purple.svg)](https://github.com)
-
-> **📅 November 23, 2024 | Version 2.0**
+[![Author](https://img.shields.io/badge/Author-Kunal_Hatode-blue)](https://github.com)
+[![Version](https://img.shields.io/badge/Version-2.0-red)](https://github.com)
 
 ---
 
 ## 📋 Table of Contents
 
-- [🛡️ Use Case & Detection Engineering Framework](#️-use-case--detection-engineering-framework)
+- [🛡️ Detection Engineering Framework](#️-detection-engineering-framework)
   - [📋 Table of Contents](#-table-of-contents)
   - [📖 About this Framework](#-about-this-framework)
-    - [📝 Document Information](#-document-information)
-    - [📚 Version History](#-version-history)
+    - [📚 Pre-Git Version History](#-pre-git-version-history)
     - [👥 Review History](#-review-history)
   - [🎯 Introduction](#-introduction)
     - [📄 Preface](#-preface)
@@ -43,16 +39,7 @@
 
 ## 📖 About this Framework
 
-### 📝 Document Information
-
-| **Field** | **Value** |
-|-----------|-----------|
-| **👤 Authors** | Kunal Hatode, Frank Hassenrueck, Matrix Chau |
-| **🏢 Change Authority** | Customer Experience, Cisco |
-| **📅 Current Version** | 2.0 |
-| **📆 Last Updated** | November 23, 2024 |
-
-### 📚 Version History
+### 📚 Pre-Git Version History
 
 | **Version** | **📅 Date** | **📊 Status** | **🔄 Changes** |
 |-------------|-------------|---------------|----------------|
@@ -88,10 +75,10 @@ graph TB
     C --> D[🔧 Improvement Phase]
     D --> A
     
-    style A fill:#e1f5fe
-    style B fill:#f3e5f5
-    style C fill:#e8f5e8
-    style D fill:#fff3e0
+    style A fill:#0c2d6b,stroke:#fff,stroke-width:2px,color:#fff
+    style B fill:#9e6a03,stroke:#fff,stroke-width:2px,color:#fff
+    style C fill:#196c2e,stroke:#fff,stroke-width:2px,color:#fff
+    style D fill:#553098,stroke:#fff,stroke-width:2px,color:#fff
 ```
 
 This comprehensive guide aims to provide security professionals, incident responders, and IT teams with a holistic understanding of the key principles, strategies, and best practices involved in building and maintaining an effective security monitoring and incident response program.
@@ -144,34 +131,20 @@ graph LR
     C[📜 Compliance] --> D
     D --> E[🔍 Detection Use Cases]
     
-    style D fill:#f9f,stroke:#333,stroke-width:3px
+    style A fill:#693e00,stroke:#fff,stroke-width:2px,color:#fff
+    style B fill:#640d04,stroke:#fff,stroke-width:2px,color:#fff
+    style C fill:#3c1e70,stroke:#fff,stroke-width:2px,color:#fff
+    style D fill:#161b22,stroke:#fff,stroke-width:3px,color:#fff
+    style E fill:#f0f6fc,stroke:#fff,stroke-width:2px,color:#000
 ```
 
 > ⚠️ **Disclaimer**: Following the guidelines and recommendations in this document does not guarantee a secure environment, or that all security incidents will be prevented. Absolute security is impossible to achieve on any open network. However, security risks can be reduced by establishing a good security policy together with sound administration practices; monitoring and responding to security incidents; testing and evaluating security; and improving, securing and managing security weaknesses on an on-going basis. Cisco does not recommend deploying security technologies without associated security policies.
 
 ---
 
-## 🏗️ Use Case & Detection Engineering Framework
+## 🏗️ Detection Engineering Framework
 
 ### 🔍 Overview
-
-```mermaid
-mindmap
-  root((🛡️ Detection Engineering))
-    🎯 Use Cases
-      📋 Planning
-      ⚙️ Development  
-      🚀 Delivery
-      🔧 Improvement
-    🔍 Detection Rules
-      📊 Analytics
-      🔎 Signatures
-      📈 Correlation
-    📋 Playbooks
-      🚨 Response
-      🔄 Automation
-      📞 Escalation
-```
 
 In the context of cybersecurity, a **use case** describes a potential security threat or incident and defines the steps, actions, or behaviors that indicate the presence of that threat. It helps in identifying, monitoring, and detecting security incidents or suspicious activities within an organization's network or systems.
 
@@ -197,11 +170,11 @@ graph TD
     C --> D[🚨 Incident Response]
     D --> E[💼 Business Value]
     
-    style A fill:#ffebee
-    style B fill:#fff3e0
-    style C fill:#e8f5e8
-    style D fill:#e3f2fd
-    style E fill:#f3e5f5
+    style A fill:#F44336,stroke:#fff,stroke-width:2px,color:#fff
+    style B fill:#FF9800,stroke:#fff,stroke-width:2px,color:#fff
+    style C fill:#4CAF50,stroke:#fff,stroke-width:2px,color:#fff
+    style D fill:#2196F3,stroke:#fff,stroke-width:2px,color:#fff
+    style E fill:#9C27B0,stroke:#fff,stroke-width:2px,color:#fff
 ```
 
 Within the complexity of the security architecture, framework can provide structure and overview. Such frameworks enable control over the development of the use cases and provide insight into identify how well an organization can defend against cyber threats.
@@ -228,7 +201,15 @@ graph LR
     H[🔄 Redundancy Elimination] --> B
     I[📋 State Management] --> B
     
-    style B fill:#f9f,stroke:#333,stroke-width:3px
+    style A fill:#2196F3,stroke:#fff,stroke-width:2px,color:#fff
+    style B fill:#9C27B0,stroke:#fff,stroke-width:3px,color:#fff
+    style C fill:#F44336,stroke:#fff,stroke-width:2px,color:#fff
+    style D fill:#FF9800,stroke:#fff,stroke-width:2px,color:#fff
+    style E fill:#4CAF50,stroke:#fff,stroke-width:2px,color:#fff
+    style F fill:#00BCD4,stroke:#fff,stroke-width:2px,color:#fff
+    style G fill:#795548,stroke:#fff,stroke-width:2px,color:#fff
+    style H fill:#607D8B,stroke:#fff,stroke-width:2px,color:#fff
+    style I fill:#3F51B5,stroke:#fff,stroke-width:2px,color:#fff
 ```
 
 The key principles driving this framework:
@@ -264,12 +245,12 @@ graph TB
     A --> E[🤖 SOAR Integration Issues]
     A --> F[🏢 Vendor Lock-in]
     
-    style A fill:#ffebee
-    style B fill:#fff3e0
-    style C fill:#fff3e0
-    style D fill:#fff3e0
-    style E fill:#fff3e0
-    style F fill:#fff3e0
+    style A fill:#F44336,stroke:#fff,stroke-width:2px,color:#fff
+    style B fill:#FF5722,stroke:#fff,stroke-width:2px,color:#fff
+    style C fill:#FF9800,stroke:#fff,stroke-width:2px,color:#fff
+    style D fill:#FFC107,stroke:#000,stroke-width:2px,color:#000
+    style E fill:#FFEB3B,stroke:#000,stroke-width:2px,color:#000
+    style F fill:#CDDC39,stroke:#000,stroke-width:2px,color:#000
 ```
 
 **🔍 Key Challenges Identified:**
@@ -302,9 +283,12 @@ graph LR
     D --> E[🔍 Detect]
     D --> F[🚨 Respond]
     
-    style D fill:#f9f,stroke:#333,stroke-width:3px
-    style E fill:#e8f5e8
-    style F fill:#ffebee
+    style A fill:#3F51B5,stroke:#fff,stroke-width:2px,color:#fff
+    style B fill:#9C27B0,stroke:#fff,stroke-width:2px,color:#fff
+    style C fill:#FF9800,stroke:#fff,stroke-width:2px,color:#fff
+    style D fill:#2196F3,stroke:#fff,stroke-width:3px,color:#fff
+    style E fill:#4CAF50,stroke:#fff,stroke-width:2px,color:#fff
+    style F fill:#F44336,stroke:#fff,stroke-width:2px,color:#fff
 ```
 
 Naturally, the events and incidents that flow from the security monitoring architecture can be used to improve protection mechanisms or further refine the threat identification. While threats are a core driver for security monitoring, they are not the only driver. Other aspects of the organizational environment must be considered as well such as **risk** and **compliance** obligations.
@@ -338,7 +322,19 @@ graph TB
     C --> C2[🏛️ National Regulations]
     C --> C3[🏭 Industry Requirements]
     
-    style D fill:#f9f,stroke:#333,stroke-width:3px
+    style D fill:#9C27B0,stroke:#fff,stroke-width:3px,color:#fff
+    style A fill:#F44336,stroke:#fff,stroke-width:2px,color:#fff
+    style B fill:#FF9800,stroke:#fff,stroke-width:2px,color:#fff
+    style C fill:#2196F3,stroke:#fff,stroke-width:2px,color:#fff
+    style A1 fill:#E91E63,stroke:#fff,stroke-width:2px,color:#fff
+    style A2 fill:#E91E63,stroke:#fff,stroke-width:2px,color:#fff
+    style A3 fill:#E91E63,stroke:#fff,stroke-width:2px,color:#fff
+    style B1 fill:#FF5722,stroke:#fff,stroke-width:2px,color:#fff
+    style B2 fill:#FF5722,stroke:#fff,stroke-width:2px,color:#fff
+    style B3 fill:#FF5722,stroke:#fff,stroke-width:2px,color:#fff
+    style C1 fill:#3F51B5,stroke:#fff,stroke-width:2px,color:#fff
+    style C2 fill:#3F51B5,stroke:#fff,stroke-width:2px,color:#fff
+    style C3 fill:#3F51B5,stroke:#fff,stroke-width:2px,color:#fff
 ```
 
 **⚠️ Risks**
@@ -390,8 +386,16 @@ graph TD
     J --> D
     J --> E
     
-    style A fill:#e3f2fd
-    style I fill:#e8f5e8
+    style A fill:#2196F3,stroke:#fff,stroke-width:2px,color:#fff
+    style B fill:#9C27B0,stroke:#fff,stroke-width:2px,color:#fff
+    style C fill:#607D8B,stroke:#fff,stroke-width:2px,color:#fff
+    style D fill:#795548,stroke:#fff,stroke-width:2px,color:#fff
+    style E fill:#00BCD4,stroke:#fff,stroke-width:2px,color:#fff
+    style F fill:#FF5722,stroke:#fff,stroke-width:2px,color:#fff
+    style G fill:#F44336,stroke:#fff,stroke-width:2px,color:#fff
+    style H fill:#E91E63,stroke:#fff,stroke-width:2px,color:#fff
+    style I fill:#4CAF50,stroke:#fff,stroke-width:2px,color:#fff
+    style J fill:#8BC34A,stroke:#fff,stroke-width:2px,color:#fff
 ```
 
 It's important to understand what the organisation business objectives are specifically for a given period of time. As these business objectives influence and shape the technology decisions. The technology decisions in turn become the assets in the shape of IT equipment, People and Data that must be safeguarded every single day because they are bound to have vulnerabilities that possess the risk of being exploited by Threat agents.
@@ -439,8 +443,12 @@ graph LR
     D --> F[🔄 Hybrid Analysis]
     E --> F
     
-    style A fill:#fff3e0
-    style F fill:#e8f5e8
+    style A fill:#FF9800,stroke:#fff,stroke-width:2px,color:#fff
+    style B fill:#2196F3,stroke:#fff,stroke-width:2px,color:#fff
+    style C fill:#9C27B0,stroke:#fff,stroke-width:2px,color:#fff
+    style D fill:#00BCD4,stroke:#fff,stroke-width:2px,color:#fff
+    style E fill:#E91E63,stroke:#fff,stroke-width:2px,color:#fff
+    style F fill:#4CAF50,stroke:#fff,stroke-width:2px,color:#fff
 ```
 
 There are **two risk assessment methodologies**:
@@ -481,7 +489,14 @@ graph TB
     A --> G[🦠 Malware]
     A --> H[🔥 Advanced Persistent Threats]
     
-    style A fill:#ffebee
+    style A fill:#F44336,stroke:#fff,stroke-width:2px,color:#fff
+    style B fill:#FF5722,stroke:#fff,stroke-width:2px,color:#fff
+    style C fill:#E91E63,stroke:#fff,stroke-width:2px,color:#fff
+    style D fill:#9C27B0,stroke:#fff,stroke-width:2px,color:#fff
+    style E fill:#673AB7,stroke:#fff,stroke-width:2px,color:#fff
+    style F fill:#3F51B5,stroke:#fff,stroke-width:2px,color:#fff
+    style G fill:#2196F3,stroke:#fff,stroke-width:2px,color:#fff
+    style H fill:#00BCD4,stroke:#fff,stroke-width:2px,color:#fff
 ```
 
 **Common threat drivers include:**
@@ -521,20 +536,4 @@ Incident response activities originating from security alerts are also input int
 
 There are dozens of acronyms, hundreds of controls, and many business owners find themselves completely overwhelmed with compliance obligations. Compliance requirements vary and can be imposed by law, regulatory bodies, and even private industry groups such as the Payment Card Industry.
 
-```mermaid
-graph TB
-    A[📜 Compliance Drivers] --> B[🌍 International]
-    A --> C[🏛️ National]
-    A --> D[🏭 Industry Sector]
-    A --> E[🏢 Internal Policies]
-    
-    B --> B1[ISO 27001]
-    B --> B2[GDPR]
-    B --> B3[Common Criteria]
-    
-    C --> C1[Qatar CSF]
-    C --> C2[Cyber Essentials]
-    C --> C3[BSI IT-Grundschutz]
-    
-    D --> D1[PCI DSS]
-    D -->
+# To be Continued...
