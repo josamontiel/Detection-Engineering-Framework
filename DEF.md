@@ -192,14 +192,14 @@ Within the complexity of the security architecture, framework can provide struct
 
 ```mermaid
 graph LR
-    A[💼 Business Requirements] --> B[🛡️ Use Case Framework]
-    C[⚠️ Risk Appetite] --> B
-    D[📜 Compliance] --> B
-    E[🔄 Systematic Process] --> B
-    F[📊 Visibility Assessment] --> B
-    G[🎯 Ad-hoc Reduction] --> B
-    H[🔄 Redundancy Elimination] --> B
-    I[📋 State Management] --> B
+    A[💼 Business-Driven] --> B[🛡️ Use Case Framework]
+    C[⚠️ Risk-Aligned] --> B
+    D[📜 Compliance-Focused] --> B
+    E[🔄 Systematic] --> B
+    F[📊 Visibility-Enabling] --> B
+    G[🎯 Anti-Ad-hoc] --> B
+    H[🔄 Efficiency-Driven] --> B
+    I[📋 State-Aware] --> B
     
     style A fill:#2196F3,stroke:#fff,stroke-width:2px,color:#fff
     style B fill:#9C27B0,stroke:#fff,stroke-width:3px,color:#fff
