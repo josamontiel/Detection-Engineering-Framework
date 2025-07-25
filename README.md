@@ -9,3 +9,4 @@ This framework is designed to help security teams develop, implement, and mainta
 ### Core Framework
 - **[Background and Introduction](Background-and-Introduction.md)** - Introduction
 - **[Detection Engineering Lifecycle](Detection-Engineering-Lifecycle.md)** - Complete framework methodology
+- **[Planning Phase](planning-phase.md)** - Planning methodology
