@@ -59,18 +59,17 @@ graph LR
 
 > 🔄 **Continuous Enhancement**: The improvement phase is an ongoing process that occurs after the initial delivery.
 
-
 ```mermaid
-flowchart LR
-    A[Planning] --> B[Development]
-    B --> C[Delivery]
-    C --> D[improvment]
+graph LR
+    A[🎯 Planning Phase] --> B[⚙️ Development Phase]
+    B --> C[🚀 Delivery Phase]
+    C --> D[🔧 Improvement Phase]
     D --> A
-
-    style A fill:#0d419d
-    style B fill:#1158c7
-    style C fill:#1f6feb
-    style D fill:#1f6feb
+    
+    style A fill:#0c2d6b,stroke:#fff,stroke-width:2px,color:#fff
+    style B fill:#9e6a03,stroke:#fff,stroke-width:2px,color:#fff
+    style C fill:#196c2e,stroke:#fff,stroke-width:2px,color:#fff
+    style D fill:#553098,stroke:#fff,stroke-width:2px,color:#fff
 ```
 
 ---
