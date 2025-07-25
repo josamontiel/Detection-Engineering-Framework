@@ -230,7 +230,7 @@ Through controlled testing, engineers establish baseline behavior patterns that 
 
 ---
 
-### 🟦 Phase 6-9: Implementation & Development
+### 🟦 Phase 6-10: Implementation & Development
 
 The implementation and development phases represent the core technical work where detection concepts are transformed into operational capabilities. These four interconnected phases build upon each other to create robust, tested, and deployable detection solutions that meet the requirements established in earlier phases.
 
@@ -268,12 +268,6 @@ Alert configuration establishes how detection events will be formatted, prioriti
 
 Playbook development creates standardized procedures that guide security analysts through the investigation and response process when alerts are triggered. These playbooks must provide clear, step-by-step guidance while remaining flexible enough to accommodate variations in attack techniques and environmental factors. Effective playbooks also include decision trees that help analysts determine appropriate response actions based on investigation findings.
 
----
-
-### 🔵 Phase 10-12: Deployment & Operations
-
-The final phases of the framework focus on transitioning developed detection capabilities from development environments into operational production use. These phases ensure that detection capabilities are not only technically sound but also operationally sustainable and properly integrated into existing security operations workflows.
-
 #### 🔬 Phase 10: Response Testing
 
 Response testing validates that the complete detection and response system functions effectively under realistic operational conditions. This phase moves beyond the technical testing of detection logic to examine the human and procedural elements that determine whether detection capabilities translate into effective security outcomes.
@@ -281,6 +275,12 @@ Response testing validates that the complete detection and response system funct
 Tabletop exercises engage security teams in simulated incident scenarios that test not only the technical detection capabilities but also the human response processes, communication protocols, and decision-making procedures that activate when alerts are generated. These exercises reveal gaps between theoretical response procedures and practical operational realities, highlighting areas where additional training, process refinement, or tool configuration may be needed.
 
 Simulated incident response drills provide hands-on testing of the complete alert-to-resolution workflow, measuring how effectively security teams can investigate alerts, make appropriate decisions, and take corrective actions. These drills often reveal important insights about alert quality, investigation tools, and procedural effectiveness that cannot be discovered through purely technical testing approaches.
+
+---
+
+### 🔵 Phase 11-12: Deployment & Operations
+
+The final phases of the framework focus on transitioning developed detection capabilities from development environments into operational production use. These phases ensure that detection capabilities are not only technically sound but also operationally sustainable and properly integrated into existing security operations workflows.
 
 #### 🤝 Phase 11: SOC Handover
 
@@ -313,5 +313,5 @@ Knowledge management processes ensure that insights gained from individual detec
 
 ---
 
-> 💡 **Pro Tip**: The Cisco Detection Engineering Framework emphasizes the importance of **end-to-end traceability** from business drivers to operational outcomes, ensuring that every detection investment delivers measurable business value.
+> 💡 **Pro Tip**: The Detection Engineering Framework emphasizes the importance of **end-to-end traceability** from business drivers to operational outcomes, ensuring that every detection investment delivers measurable business value.
 
