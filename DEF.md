@@ -29,11 +29,6 @@
     - [⚠️ Risk Drivers](#️-risk-drivers)
     - [🎯 Threat Drivers](#-threat-drivers)
     - [📜 Compliance Drivers](#-compliance-drivers)
-  - [🔄 Use Case and Detection Engineering Lifecycle](#-use-case-and-detection-engineering-lifecycle)
-    - [📋 Planning Phase](#-planning-phase)
-    - [⚙️ Development Phase](#️-development-phase)
-    - [🚀 Delivery Phase](#-delivery-phase)
-    - [🔧 Improvement Phase](#-improvement-phase)
 
 ---
 
