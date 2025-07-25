@@ -1,19 +1,16 @@
 # 🔄Detection Engineering Lifecycle
 
-### ⚠️ The Challenge
+This detection engineering framework allows for strategic and effective decision making in a phased manner when dealing with planning, developing, delivering and improving new use cases for the SOC.
 
-Most organizations tend to deal on an **ad-hoc basis** of building use cases without any reference framework or train of thought. This introduces **risks** to the organization since their SOC is not properly being guided in an effective way.
+Each of these phases is separately addressed hereafter. Before we look at th phases, it is important to note that in this framework itself, two-way traceability is important. Thus, it must be possible to connect elements at the operational layer to elements at the tactical and ultimately strategical layers and vice versa. This allows the SOC to show how business drivers are implemented in operational monitoring (top-down) and which monitoring rules relate to which specific threats and business drivers (bottom-up). 
 
-### ✅ The Solution
-
-This Use Case framework allows for **strategic and effective decision making** in a phased manner when dealing with developing and implementing new use cases for the **Security Operations Centre (SOC)**.
 
 ## 🔗 Two-Way Traceability
 
-> 🔄 **Key Principle**: Two-way traceability is important throughout the framework.
+> 🔄 **Key Principle**: The key principle that connects each phase is Two-way traceability throughout the framework lifecycle.
 
 ```mermaid
-graph TB
+graph LR
     subgraph "📈 Strategic Layer"
         A[🎯 Business Drivers]
     end
@@ -42,7 +39,9 @@ graph TB
 
 ---
 
+
 ## 🔄 Lifecycle Phases
+
 
 ### 1️⃣ Planning Phase
 
@@ -61,17 +60,26 @@ graph TB
 > 🔄 **Continuous Enhancement**: The improvement phase is an ongoing process that occurs after the initial delivery.
 
 
+```mermaid
+flowchart LR
+    A[Planning] --> B[Development]
+    B --> C[Delivery]
+    C --> D[improvment]
+    D --> A
+
+    style A fill:#0d419d
+    style B fill:#1158c7
+    style C fill:#1f6feb
+    style D fill:#1f6feb
+```
+
 ---
 
-*📝 **Note**: This framework ensures strategic alignment between business objectives and operational security monitoring capabilities.*
-
-# 🔧 Detection Engineering Framework
 
 ## 🎯 Detailed Framework Overview
 
-> 🚀 **Purpose**: The Detection Engineering Framework provides a systematic approach to developing, testing, and deploying security detection capabilities within enterprise environments.
-
-This comprehensive framework transforms **business drivers** (Risk, Threat, Compliance) into **operational security capabilities** through a structured 12-phase methodology that ensures robust detection engineering practices.
+This comprehensive framework transforms **business monitoring needs** due to Risk, Threat, Compliance drivers into **operational security detection and response** through a structured 12-phase methodology that ensures robust detection engineering practices.
+Lets have a look at the steps involved in each phase.
 
 ---
 
