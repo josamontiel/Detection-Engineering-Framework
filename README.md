@@ -1,4 +1,8 @@
-# SOC Detection Engineering Framework
+# Detection Engineering Framework
+
+[![Status](https://img.shields.io/badge/Status-Released-green.svg)](https://github.com)
+[![Author](https://img.shields.io/badge/Author-Kunal_Hatode-blue)](https://github.com)
+[![Version](https://img.shields.io/badge/Version-2.0-red)](https://github.com)
 
 A comprehensive framework for Security Operations Center (SOC) use case development, implementation, and management. This repository provides structured methodologies, templates, and best practices for building effective security monitoring and detection capabilities.
 
