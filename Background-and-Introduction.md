@@ -17,7 +17,7 @@
     - [📄 Preface](#-preface)
     - [👥 Audience](#-audience)
     - [🔍 Scope](#-scope)
-  - [🏗️ Use Case & Detection Engineering Framework](#️-use-case--detection-engineering-framework-1)
+  - [🏗️ Detection Engineering Framework](#️-detection-engineering-framework-1)
     - [🔍 Overview](#-overview)
     - [❓ Why adopt a Use Case & Detection Engineering Framework?](#-why-adopt-a-use-case--detection-engineering-framework)
     - [⚡ Principles of the Framework](#-principles-of-the-framework)
@@ -85,16 +85,6 @@ This comprehensive guide aims to provide security professionals, incident respon
 - **🚀 Delivery Phase**: Implementation and activation
 - **🔧 Improvement Phase**: Continuous enhancement and optimization
 
-The journey begins by establishing a strong foundation in the **Planning Phase**, where organizations define their security objectives, assess risks, and identify the scope of their security monitoring program. This phase emphasizes the importance of collaboration between stakeholders, ensuring alignment with business objectives, and selecting appropriate tools and technologies to support the monitoring efforts.
-
-The guide then delves into the **Development Phase**, where security use cases and detection rules are developed, tested, and fine-tuned. It highlights the significance of conducting thorough technical analysis, considering business cases, and involving stakeholders throughout the development process. The authors stress the need for well-defined and well-designed playbooks, as well as the prerequisites for successful automation implementation, including suitable tools, data integration, process readiness, and organizational preparedness.
-
-The **Delivery Phase** focuses on the handover of use cases to the security monitoring team, rule activation, and the crucial aspect of monitoring rule behavior and metrics. It stresses the need for vigilant monitoring of false positives and false negatives, ensuring the use cases are delivering the desired outcomes and providing insights to drive business decisions.
-
-Cataloging the use cases and rules is explored in-depth in the guide's chapters, as a crucial aspect of maintaining an organized and efficient security monitoring program. The authors emphasize the importance of clear and comprehensive catalogs, offering guidance on creating effective use case quality ratings and release benchmarks. The inclusion of mapping the use cases to the **MITRE ATT&CK framework** adds an additional layer of insight and enables organizations to identify and prioritize security gaps.
-
-The **Improvement Phase** focuses on the continuous enhancement of the use cases and rules in response to technical bugs, deficiencies in output, and the need for periodic review. The guide emphasizes the importance of conducting regular reviews, proactive attack simulations, and acceptance testing to ensure the effectiveness and relevance of the security monitoring program. It also outlines the process of decommissioning use cases that are no longer required, highlighting the need for proper offloading and communication with stakeholders.
-
 Throughout the guide, key roles and stakeholders are identified, providing a clear understanding of the responsibilities and contributions of various teams involved in security monitoring and incident response. This holistic approach ensures effective collaboration and efficient handling of security incidents.
 
 > ⚠️ **Important Note**: This guide is a comprehensive framework, encompassing a wide range of concepts, methodologies, and best practices. It serves as a valuable resource for organizations seeking to establish or enhance their security monitoring and incident response capabilities.
@@ -121,7 +111,7 @@ This deliverable is a **Use Case Framework** to address the detection of cyber t
 
 ```mermaid
 graph LR
-    A[🎯 Risk] --> D[🛡️ Use Case Framework]
+    A[🎯 Risk] --> D[🛡️ Detection Framework]
     B[⚠️ Threat] --> D
     C[📜 Compliance] --> D
     D --> E[🔍 Detection Use Cases]
@@ -400,6 +390,23 @@ It's important to understand what the organisation business objectives are speci
 - **📊 Exposure** is **⚠️ risk**, and **⚠️ risk** is mitigated by **🛡️ safeguards**  
 - **🛡️ Safeguards** protect **💾 assets** that are endangered by **🎯 threats**
 
+```mermaid
+flowchart TB
+    A[🎯 Threats] -->|exploit| B[⚠️ Vulnerabilities]
+    B -->|results in| C[📊 Exposure]
+    C -->|is| D[⚠️ Risk]
+    D -->|mitigated by| E[🛡️ Safeguards]
+    E -->|protect| F[💾 Assets]
+    F -->|endangered by| A
+
+    style A fill:#b62324,stroke:#fff,stroke-width:2px,color:#fff
+    style B fill:#bb8009,stroke:#fff,stroke-width:2px,color:#fff
+    style C fill:#db6d28,stroke:#fff,stroke-width:2px,color:#fff
+    style D fill:#db61a2,stroke:#fff,stroke-width:2px,color:#fff
+    style E fill:#00BCD4,stroke:#fff,stroke-width:2px,color:#fff
+    style F fill:#2ea043,stroke:#fff,stroke-width:2px,color:#fff
+```
+
 Businesses also evolve continuously. Thus, it is possible that changes to the business layer of the use case may be required. These changes may also need to be reflected in operational implementation. For example, changes in demands regarding use case output may lead to new assets being monitored or new monitoring rules being implemented.
 
 <details>
@@ -558,6 +565,17 @@ graph TD
     G --> H[🔐 Confidentiality]
     G --> I[✅ Integrity]
     G --> J[⚡ Availability]
+
+    style A fill:#F44336,stroke:#fff,stroke-width:2px,color:#fff
+    style B fill:#FF5722,stroke:#fff,stroke-width:2px,color:#fff
+    style C fill:#E91E63,stroke:#fff,stroke-width:2px,color:#fff
+    style D fill:#9C27B0,stroke:#fff,stroke-width:2px,color:#fff
+    style E fill:#673AB7,stroke:#fff,stroke-width:2px,color:#fff
+    style F fill:#3F51B5,stroke:#fff,stroke-width:2px,color:#fff
+    style G fill:#2196F3,stroke:#fff,stroke-width:2px,color:#fff
+    style H fill:#00BCD4,stroke:#fff,stroke-width:2px,color:#fff
+    style I fill:#00BCD4,stroke:#fff,stroke-width:2px,color:#fff
+    style J fill:#00BCD4,stroke:#fff,stroke-width:2px,color:#fff
 ```
 
 ### 📊 Compliance Requirements Sources
@@ -569,17 +587,6 @@ Compliance requirements vary by **industry** and **sector**, but typically invol
 - 🌍 **ISO 27001**
 
 > ⚠️ **Important**: Many of these standards impose rules that mandate monitoring key IT systems and security controls.
-
-### 🔄 Impact on SOC Operations
-
-```mermaid
-flowchart LR
-    A[📈 New Regulations] --> B[🏢 Audit & Compliance Departments]
-    B --> C[🔄 SOC Use Case Changes]
-    C --> D[📊 New Output Requirements]
-    D --> E[🔍 New Monitoring Rules]
-    E --> F[📈 Compliance Reporting]
-```
 
 <details>
 <summary>🔍 <strong>Types of Compliance Drivers - Click to expand</strong></summary>
