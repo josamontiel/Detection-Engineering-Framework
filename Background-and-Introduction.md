@@ -1,35 +1,5 @@
 # 🛡️ Detection Engineering Framework
 
-[![Status](https://img.shields.io/badge/Status-Released-green.svg)](https://github.com)
-[![Author](https://img.shields.io/badge/Author-Kunal_Hatode-blue)](https://github.com)
-[![Version](https://img.shields.io/badge/Version-2.0-red)](https://github.com)
-
----
-
-## 📋 Table of Contents
-
-- [🛡️ Detection Engineering Framework](#️-detection-engineering-framework)
-  - [📋 Table of Contents](#-table-of-contents)
-  - [📖 About this Framework](#-about-this-framework)
-    - [📚 Pre-Git Version History](#-pre-git-version-history)
-    - [👥 Review History](#-review-history)
-  - [🎯 Introduction](#-introduction)
-    - [📄 Preface](#-preface)
-    - [👥 Audience](#-audience)
-    - [🔍 Scope](#-scope)
-  - [🏗️ Detection Engineering Framework](#️-detection-engineering-framework-1)
-    - [🔍 Overview](#-overview)
-    - [❓ Why adopt a Use Case & Detection Engineering Framework?](#-why-adopt-a-use-case--detection-engineering-framework)
-    - [⚡ Principles of the Framework](#-principles-of-the-framework)
-    - [🧩 What does the Framework consist of?](#-what-does-the-framework-consist-of)
-    - [⚠️ Challenges of Creating & Managing Use Cases](#️-challenges-of-creating--managing-use-cases)
-  - [🎯 Drivers for Use Cases](#-drivers-for-use-cases)
-    - [🔄 Risk, Threats and Compliance Overview](#-risk-threats-and-compliance-overview)
-    - [🏢 Aligning to Business Context](#-aligning-to-business-context)
-    - [⚠️ Risk Drivers](#️-risk-drivers)
-    - [🎯 Threat Drivers](#-threat-drivers)
-    - [📜 Compliance Drivers](#-compliance-drivers)
-
 ---
 
 ## 📖 About this Framework
