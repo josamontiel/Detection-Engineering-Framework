@@ -64,7 +64,7 @@
 In today's ever-evolving digital landscape, organizations face a multitude of sophisticated and persistent cyber threats that can compromise their sensitive data, disrupt operations, and damage their reputation. To effectively combat these threats, a robust **Use Case and Detection Engineering Framework** is essential.
 
 ```mermaid
-graph TB
+graph LR
     A[🎯 Planning Phase] --> B[⚙️ Development Phase]
     B --> C[🚀 Delivery Phase]
     C --> D[🔧 Improvement Phase]
@@ -186,8 +186,8 @@ Within the complexity of the security architecture, framework can provide struct
 ### ⚡ Principles of the Framework
 
 ```mermaid
-graph LR
-    A[💼 Business-Driven] --> B[🛡️ Use Case Framework]
+graph TB
+    A[💼 Business-Driven] --> B[🛡️Framework]
     C[⚠️ Risk-Aligned] --> B
     D[📜 Compliance-Focused] --> B
     E[🔄 Systematic] --> B
@@ -425,6 +425,8 @@ While threats and risks are distinct concepts, they are intertwined and mutually
 
 </details>
 
+---
+
 ### ⚠️ Risk Drivers
 
 All IT systems have risk. There is no way to eliminate 100 percent of all risks. Instead, upper management and key stakeholders must decide which risks are acceptable and which are not. Determining which risks are acceptable requires detailed and complex asset and risk assessments.
@@ -469,6 +471,8 @@ Business impact analysis (BIA) is a systematic process to determine and evaluate
 One of the basic assumptions behind BIA is that every component of the organization is reliant upon the continued functioning of every other component, but that some are more crucial than others and require a greater allocation of time, effort and funds in the wake of a disaster.
 
 </details>
+
+---
 
 ### 🎯 Threat Drivers
 
@@ -526,6 +530,9 @@ Threat hunting is the proactive cybersecurity practice of searching for hidden t
 Incident response activities originating from security alerts are also input into the use case management process. This loopback mechanism ensures that monitoring is effective and efficient. After all, breaches must be detected and false-positives should be avoided as much as possible.
 
 </details>
+
+
+---
 
 ### 📜 Compliance Drivers
 
