@@ -1,9 +1,5 @@
 # 🔄Detection Engineering Lifecycle
 
-[![Status](https://img.shields.io/badge/Status-Released-green.svg)](https://github.com)
-[![Author](https://img.shields.io/badge/Author-Kunal_Hatode-blue)](https://github.com)
-[![Version](https://img.shields.io/badge/Version-2.0-red)](https://github.com)
-
 ---
 
 This detection engineering framework allows for strategic and effective decision making in a phased manner when dealing with planning, developing, delivering and improving new use cases for the SOC.
