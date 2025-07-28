@@ -14,7 +14,22 @@ This framework is designed to help security teams develop, implement, and mainta
 - **[Background and Introduction](Background-and-Introduction.md)** - Introduction
 - **[Detection Engineering Lifecycle](Detection-Engineering-Lifecycle.md)** - Complete framework methodology
 - **[Planning Phase](planning-phase.md)** - Planning methodology
-- **[Development Phase]()** - Development methodology  - Coming Soon
-- **[Delivery Phase]()** - Delivery methodology  - Coming Soon
-- **[Improvement Phase ]()** - Improvment methodology  - Coming Soon
-- **[Best Practices]()** - Best Practices  - Coming Soon
+
+- **[Development Phase]()** - Development methodology - ![Coming Soon](https://img.shields.io/badge/Coming%20soon-feb204)
+- **[Delivery Phase]()** - Delivery methodology - ![Coming Soon](https://img.shields.io/badge/Coming%20soon-feb204)
+- **[Improvement Phase ]()** - Improvement methodology - ![Coming Soon](https://img.shields.io/badge/Coming%20soon-feb204)
+- **[Best Practices]()** - Best Practices - ![Coming Soon](https://img.shields.io/badge/Coming%20soon-feb204)
+- **[Tools and Templates](tool-and-templates)** - ![Coming Soon](https://img.shields.io/badge/Coming%20soon-feb204)
+
+
+
+
+<!--
+- **[Development Phase](development-phase.md)** - Development methodology  - Coming Soon
+- **[Delivery Phase](delivery-phase.md)** - Delivery methodology  - Coming Soon
+- **[Improvement Phase ](improvement-phase.md)** - Improvment methodology  - Coming Soon
+- **[Best Practices](best-practice.md)** - Best Practices  - Coming Soon
+- **[Tools](tools.md)** - Tools - Coming Soon
+-->
+
+  
