@@ -8,9 +8,9 @@ A comprehensive framework for Security Operations Center (SOC) use case developm
 
 This framework is designed to help security teams develop, implement, and maintain effective SOC use cases. Whether you're building a new SOC or enhancing existing capabilities, this repository provides the guidance you need.
 
-## 📖 Documentation
+## 📖 Core Framework
 
-### Core Framework
+
 - **[Background and Introduction](Background-and-Introduction.md)** - Introduction
 - **[Detection Engineering Lifecycle](Detection-Engineering-Lifecycle.md)** - Complete framework methodology
 - **[Planning Phase](planning-phase.md)** - Planning methodology
