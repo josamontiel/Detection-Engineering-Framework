@@ -14,7 +14,7 @@ This framework is designed to help security teams develop, implement, and mainta
 - **[Background and Introduction](Background-and-Introduction.md)** - Introduction
 - **[Detection Engineering Lifecycle](Detection-Engineering-Lifecycle.md)** - Complete framework methodology
 - **[Planning Phase](planning-phase.md)** - Planning methodology
-- **[Development Phase - Coming Soon]()** - Development methodology
-- **[Delivery Phase - Coming Soon]()** - Delivery methodology
-- **[Improvement Phase - Coming Soon]()** - Improvment methodology
-- **[Best Practices - Coming Soon]()** - Best Practices
+- **[Development Phase]()** - Development methodology  - Coming Soon
+- **[Delivery Phase]()** - Delivery methodology  - Coming Soon
+- **[Improvement Phase ]()** - Improvment methodology  - Coming Soon
+- **[Best Practices]()** - Best Practices  - Coming Soon
