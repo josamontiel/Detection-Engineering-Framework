@@ -94,4 +94,5 @@ We encourage readers and practitioners to explore these original sources for dee
 *"Standing on the shoulders of giants, we build upon the collective wisdom of the cybersecurity community to create stronger, more resilient defense mechanisms for organizations worldwide."*
 
 🔗 **For the most current versions of these resources, please visit the original links provided above.**
-  
+
+  <a href="https://github.com/Ke0xes/Detection-Engineering-Framework">Detection Engineering Framework</a> © 2021 by <a href="https://kunal.hatode.com">Kunal Hatode</a> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a><br><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
