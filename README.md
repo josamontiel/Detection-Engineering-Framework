@@ -15,7 +15,7 @@ This framework is designed to help security teams develop, implement, and mainta
 - **[Detection Engineering Lifecycle](Detection-Engineering-Lifecycle.md)** - Complete Framework Methodology
 - **[Planning Phase](planning-phase.md)** - Planning Methodology
 - **[Development Phase A](development-phase-A.md)** - Development Methodology & Technical Feasibilty - ![Under Review](https://img.shields.io/badge/Under%20Review-9e298d)
-- **[Development Phase B](development-phase-B.md)** - Development Methodology & Code Engineering - ![Under Review](https://img.shields.io/badge/Under%20Review-9e298d)
+- **[Development Phase B](development-phase-B.md)** - Development Methodology & Detection Code Engineering - ![Under Review](https://img.shields.io/badge/Under%20Review-9e298d)
 - **[Development Phase C](development-phase-C.md)** - Development Methodology & Response Engineering - ![Under Review](https://img.shields.io/badge/Under%20Review-9e298d)
 - **[Delivery Phase](delivery-phase.md)** - Delivery Methodology - ![Under Review](https://img.shields.io/badge/Under%20Review-9e298d)
 - **[Improvement Phase ](improvement-phase.md)** - Improvement Methodology - ![Under Review](https://img.shields.io/badge/Under%20Review-9e298d)
