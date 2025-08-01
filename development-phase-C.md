@@ -295,7 +295,7 @@ graph TD
     C --> H[Role-playing Sessions]
     C --> I[Decision-making Assessment]
     
-    D --> J[SIEM Integration]
+    D --> J[Detection Tool Integration]
     D --> K[Ticketing Systems]
     D --> L[Communication Tools]
     
@@ -330,7 +330,7 @@ During playbook testing, various stages of the incident response process outline
 One approach to playbook testing is conducting tabletop exercises or simulations where a team of security professionals role-play different incident scenarios using the playbooks as a guide. These exercises involve scenario-based discussions, decision-making, and response actions to assess the playbooks' practicality and effectiveness. Through these simulations, the team can identify any gaps, ambiguities, or inconsistencies in the playbooks and address them accordingly.
 
 #### 🔌 Integration Testing
-Another aspect of playbook testing is verifying the integration and automation of the playbooks with security tools and technologies. This involves testing the connectivity and compatibility of the playbooks with the various security systems, such as SIEM (Security Information and Event Management) platforms, ticketing systems, and communication tools. The integration testing ensures that the playbooks can effectively interact with these systems and orchestrate the required actions and workflows.
+Another aspect of playbook testing is verifying the integration and automation of the playbooks with security tools and technologies. This involves testing the connectivity and compatibility of the playbooks with the various security systems, such as Detection platforms, ticketing systems, and communication tools. The integration testing ensures that the playbooks can effectively interact with these systems and orchestrate the required actions and workflows.
 
 #### 🤝 Stakeholder Collaboration
 Furthermore, playbook testing should involve collaboration with different stakeholders, including incident response teams, IT operations, management, and legal departments. By involving these stakeholders in the testing process, the playbooks can be evaluated from different perspectives and ensure that they align with organizational policies, legal requirements, and operational constraints.
