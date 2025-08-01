@@ -2,11 +2,9 @@
 
 > This phase builds the technical detection capabilities with parsing/testing criteria to detect the malicious behaviour based on the data collected and associated response.
 
-This phase builds the technical detection capabilities with parsing/testing criteria to detect the malicious behaviour based on the data collected and associated response. Widely known as building the code, detection rule, detection analytics, detection engineering, search criteria in SIEM tools or signature-based behaviour detection in any other concerned security controls. 
+This phase builds the technical detection capabilities with parsing/testing criteria to detect the malicious behaviour based on the data collected and associated response. Widely known as building the code, detection rule, detection analytics, detection engineering, search criteria in detection tools or signature-based behaviour detection in any other concerned security controls. 
 
-The intent of the development phase is to develop the logic that is required to identify & detect the adversarial behaviours and to trigger an accurate communication & response with the help of communication systems, automation platform and/or emergency notification system; in the form of an alert with the help of Dashboard alerts that has high confidence in its integrity and accuracy to minimize the false positive rate.
-
-The development phase of SIEM detection engineering is a critical stage where the technical detection capabilities are built to identify and respond to malicious behaviors. This phase involves creating the necessary code, detection rules, analytics, and search criteria within SIEM tools or other security controls to enable effective detection of adversarial activities. The primary objective of the development phase is to establish the logic required for accurate identification and detection, as well as to initiate appropriate communication and response mechanisms, such as alerts through dashboards, automation platforms, or emergency notification systems.
+The intent of the development phase is to develop the logic that is required to identify & detect the adversarial behaviours and to trigger an accurate communication & response with the help of communication systems, automation platform and/or emergency notification system; in the form of an alert with the help of Dashboard alerts that has high confidence in its integrity and accuracy to minimize the false positive rate. The primary objective of the development phase is to establish the logic required for accurate identification and detection, as well as to initiate appropriate communication and response mechanisms, such as alerts through dashboards, automation platforms, or emergency notification systems.
 
 ## 📋 Development Phase Structure
 
@@ -45,7 +43,7 @@ The development phase has two main stages:
 - **🔍 Technical feasibility analysis**
 - **💻 Development and testing of rules & responses**
 
-The technical feasibility analysis stage involves assessing the viability and effectiveness of the proposed detection mechanisms. This analysis ensures that the selected technical approaches align with the organization's security objectives and can adequately address the identified adversarial behaviors. During this stage, the development team evaluates various factors, including the availability of required data sources, the compatibility of chosen detection techniques with existing infrastructure, and the feasibility of integrating detection capabilities into the SIEM system. The goal is to ensure that the chosen approach is technically feasible and will yield accurate and reliable results.
+The technical feasibility analysis stage involves assessing the viability and effectiveness of the proposed detection mechanisms. This analysis ensures that the selected technical approaches align with the organization's security objectives and can adequately address the identified adversarial behaviors. During this stage, the development team evaluates various factors, including the availability of required data sources, the compatibility of chosen detection techniques with existing infrastructure, and the feasibility of integrating detection capabilities into the detection system. The goal is to ensure that the chosen approach is technically feasible and will yield accurate and reliable results.
 
 Once the technical feasibility analysis is completed, the development and testing of rules and responses commence. This stage focuses on translating the identified detection requirements into actionable rules and response mechanisms. Detection rules are crafted to specify the criteria for identifying malicious behaviors based on collected data. These rules can include patterns, signatures, thresholds, or statistical models that indicate the presence of potential threats. Simultaneously, response mechanisms are developed to trigger appropriate actions when a malicious behavior is detected. These actions can range from generating an alert or notification to initiating automated remediation processes.
 
@@ -124,7 +122,7 @@ graph LR
     B --> C[⚔️ Attack Simulation]
     C --> D[📊 Telemetry Generation]
     D --> E[🔍 Detection Rule Development]
-    E --> F[🎯 SIEM Detection & Alert]
+    E --> F[🎯 Detection & Alert]
     
     style A fill:#7f1d1d,stroke:#991b1b,color:#ffffff
     style B fill:#1e3a8a,stroke:#1d4ed8,color:#ffffff
@@ -136,7 +134,7 @@ graph LR
 
 Attack Simulation is usually an activity where security experts such as the Red team or penetration testing team work with blue team or SOC monitoring analysts to identify how an adversary operates. The ultimate goal is to identify what actual telemetry is generated within the security controls and assets of the organisation during the simulation, which can help build contextual detection rules.
 
-The Attack simulation exercise allows the Detection Engineering Framework development team to identify what actual assets, data sources, telemetry and telemetry fields would be generated during an attack, which would then allow for system like SIEM to detect and alert on its occurrence. Without an attack simulation exercise the development team at its best would be either guessing or be overly confident in its development process. It is also essential to continually evaluate the state of the infrastructure for new or absent telemetry, since no environment is always static, and by carrying out attack simulations it ensures that any change in the organisation's digital environment is kept in check and align the detection capability for a continual changing environment.
+The Attack simulation exercise allows the Detection Engineering Framework development team to identify what actual assets, data sources, telemetry and telemetry fields would be generated during an attack, which would then allow for detection system to detect and alert on its occurrence. Without an attack simulation exercise the development team at its best would be either guessing or be overly confident in its development process. It is also essential to continually evaluate the state of the infrastructure for new or absent telemetry, since no environment is always static, and by carrying out attack simulations it ensures that any change in the organisation's digital environment is kept in check and align the detection capability for a continual changing environment.
 
 A more modern way of conducting such attack simulations is to equip Breach and Attack Simulation (BAS) platforms. A Breach and Attack platform simulates, assesses, and validates the most current attack techniques used by advanced persistent threats (APTs) and other malicious entities. It does this along the entire attack path to an organization's critical assets, then provides a prioritized list of remediation steps if any weaknesses are discovered. These simulations can be run on a 24/7, 365 basis, which ensures that organizations maintain much deeper visibility into the true state of their defence readiness and the Detection Engineering Framework are developed with most accurate efficacy.
 
