@@ -96,9 +96,45 @@ False positives can be expressed as the ratio between the total number of alerts
 
 **Equation 1: Formula for measuring False-positive Ratio**
 
-```math
-FP Rate% = 100 - 100 * (Number of alerts relating to incident / Total number of alerts)
-```
+Example formula for calculating the False Positive Rate is:
+
+$$
+FPR = \frac{FP}{FP + TN}
+$$
+
+Where:
+*   $FP$ = **False Positives**: The number of benign events that were incorrectly identified as malicious.
+*   $TN$ = **True Negatives**: The number of benign events that were correctly identified as benign.
+
+**In simpler terms:**
+
+$$
+FPR = \frac{\text{Number of False Alarms}}{\text{Total Number of Legitimate Events}}
+$$
+
+### Example of FPR Calculation
+
+Let's consider a security detection rule designed to identify suspicious login attempts. Over a period, this rule processes 10,000 legitimate (benign) login attempts.
+
+*   Out of these 10,000 legitimate attempts, the rule incorrectly flags **50** as suspicious. These are our **False Positives (FP)**.
+*   The remaining **9,950** legitimate attempts were correctly identified as benign. These are our **True Negatives (TN)**.
+
+Using the formula:
+
+$$
+FPR = \frac{50}{50 + 9950}
+$$
+
+$$
+FPR = \frac{50}{10000}
+$$
+
+$$
+FPR = 0.005
+$$
+
+Expressed as a percentage, the False Positive Rate is **0.5%**. This means that for every 1,000 legitimate login attempts, approximately 5 will be incorrectly flagged as suspicious by this rule.
+
 
 #### 🔍 Number of False-negatives
 
