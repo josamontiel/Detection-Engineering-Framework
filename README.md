@@ -47,6 +47,15 @@ We recognize that the strength of this Detection Engineering Framework comes not
 
 Our sincere appreciation goes to these organizations and researchers for their commitment to knowledge sharing and their continued efforts to elevate the standards of security operations and detection engineering practices worldwide.
 
+# Contributors
+
+I am very grateful to everyone who has contributed to this Framework during its inception!
+
+*   **[Frank Hassenrueck](https://www.linkedin.com/in/frank-hassenr%C3%BCck-371529116/)**
+    * Assisted in co-writing technical core elements of this framework.
+*   **[Matrix Chau](https://www.linkedin.com/in/matrixchau/)**
+    * Provided valuable early feedback and assisted in co-writing the framework.
+
 ---
 
 ## 📖 Sources & References Used
