@@ -20,6 +20,7 @@ This framework is designed to help security teams develop, implement, and mainta
 - **[Delivery Phase](delivery-phase.md)** - Delivery Methodology - ![Under Review](https://img.shields.io/badge/Under%20Review-9e298d)
 - **[Improvement Phase ](improvement-phase.md)** - Improvement Methodology - ![Under Review](https://img.shields.io/badge/Under%20Review-9e298d)
 - **[Best Practices]()** - Best Practices - ![Coming Soon](https://img.shields.io/badge/Coming%20soon-feb204)
+- **[From Theory to Practice](from-theory-to-practice.md)** - Navigating the Hurdles of the Detection Engineering Framework
 - **[Tools and Templates](tool-and-templates)** - ![Coming Soon](https://img.shields.io/badge/Coming%20soon-feb204)
 
 
