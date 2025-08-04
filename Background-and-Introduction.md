@@ -77,7 +77,7 @@ We hope that this guide will serve as a valuable reference and practical compani
 
 ### 🔍 Scope
 
-This deliverable is a **Use Case Framework** to address the detection of cyber threats & attack tactics techniques and procedures appropriate to the SOC. The objective of building a Use Case Framework is to better protect the organization's valuable assets by designing and developing detection use cases using a holistic approach that connects **Risk**, **Threat** & **compliance requirements**.
+This deliverable is a **Detection Engineering Framework** to address the detection of cyber threats & attack tactics techniques and procedures appropriate to the SOC. The objective of building a Detection Engineering Framework is to better protect the organization's valuable assets by designing and developing detection use cases using a holistic approach that connects **Risk**, **Threat** & **compliance requirements**.
 
 ```mermaid
 graph LR
@@ -93,7 +93,7 @@ graph LR
     style E fill:#f0f6fc,stroke:#fff,stroke-width:2px,color:#000
 ```
 
-> ⚠️ **Disclaimer**: Following the guidelines and recommendations in this document does not guarantee a secure environment, or that all security incidents will be prevented. Absolute security is impossible to achieve on any open network. However, security risks can be reduced by establishing a good security policy together with sound administration practices; monitoring and responding to security incidents; testing and evaluating security; and improving, securing and managing security weaknesses on an on-going basis. Cisco does not recommend deploying security technologies without associated security policies.
+> ⚠️ **Disclaimer**: Following the guidelines and recommendations in this document does not guarantee a secure environment, or that all security incidents will be prevented. Absolute security is impossible to achieve on any open network. However, security risks can be reduced by establishing a good security policy together with sound administration practices; monitoring and responding to security incidents; testing and evaluating security; and improving, securing and managing security weaknesses on an on-going basis.
 
 ---
 
@@ -101,18 +101,25 @@ graph LR
 
 ### 🔍 Overview
 
-In the context of cybersecurity, a **use case** describes a potential security threat or incident and defines the steps, actions, or behaviors that indicate the presence of that threat. It helps in identifying, monitoring, and detecting security incidents or suspicious activities within an organization's network or systems.
 
-**Detection engineering**, on the other hand, refers to the process of designing and developing effective methods and techniques to identify and respond to security threats and incidents. It involves creating and implementing:
 
-- 🔍 **Detection rules**
-- 🧠 **Logic patterns**
-- 🔎 **Search strings**
-- 📝 **Detection signatures**
+This framework provides a structured approach to enhancing an organization's cybersecurity posture through systematic threat detection and response. It integrates several key concepts to ensure comprehensive and effective security operations.
 
-These enable security monitoring systems to identify and generate alerts for suspicious activities or potential security breaches. Detection engineering also encompasses the development of **response playbooks**, which provide predefined steps and actions to be taken in response to specific security events or incidents.
+### Key Concepts
 
-The **use case and detection engineering framework** combines these two concepts to create a structured approach for developing, managing, and improving security monitoring capabilities. This framework emphasizes the importance of proactive identification, monitoring, and response to security threats.
+*   **Cybersecurity Use Case:** In the context of cybersecurity, a **use case** refers to a specific scenario or example where security measures are implemented to prevent, detect, or respond to cyber threats. It outlines how a system or process is applied to address a particular cybersecurity challenge. Use cases serve as the foundation, defining the specific threats and scenarios the framework aims to address.
+
+*   **Detection Engineering:** **Detection engineering** refers to the process of designing and developing effective methods and techniques to identify, detect and respond to security threats and incidents. It is a specialized and systematic discipline focused on building, implementing, and continuously refining mechanisms to identify malicious activities, anomalies, or indicators of compromise within an organization's systems and networks. It applies an engineering mindset to threat detection, moving beyond simply writing static detection rules.
+
+*   **Response Playbooks:** **Response playbooks** provide predefined steps and actions to be taken in response to specific security events or incidents. They are crucial for ensuring a consistent, rapid, and effective reaction once a threat is detected.
+
+### The Detection Engineering Framework
+
+The **Detection Engineering Framework** combines these core concepts to create a comprehensive and structured approach for developing, managing, and continuously improving security monitoring and incident response capabilities.
+
+At its core, the framework is driven by well-defined **cybersecurity use cases**, which articulate the specific threats and attack scenarios relevant to the organization. These use cases directly inform the **detection engineering** process, guiding the design, development, and refinement of robust detection mechanisms. Crucially, this engineering effort also encompasses the creation and integration of **response playbooks**, as effective detection is only truly valuable when paired with a clear, predefined plan for action and mitigation. This ensures that every identified threat has a corresponding, actionable plan for mitigation and remediation.
+
+This framework emphasizes the importance of proactive identification, continuous monitoring, and orchestrated response to security threats, enabling organizations to build a more resilient and adaptive defense against the evolving threat landscape.
 
 ### ❓ Why adopt a Use Case & Detection Engineering Framework?
 
@@ -134,13 +141,13 @@ graph TD
 
 Within the complexity of the security architecture, framework can provide structure and overview. Such frameworks enable control over the development of the use cases and provide insight into identify how well an organization can defend against cyber threats.
 
-**🎯 The use case framework should allow the SOC:**
+**🎯 The Detection Engineering Framework should allow the SOC:**
 
 - ✅ To ensure stakeholder objectives are met uniformly
-- ✅ To capture gaps and challenges early on during the creation of use cases
+- ✅ To capture gaps and challenges early on during the creation of use cases or detections
 - ✅ To have a holistic "frame of reference" where detection use cases can be categorized into
 - ✅ To engineer detection capabilities in a consistent & methodological manner
-- ✅ To quickly see where use cases are lacking and need more attention
+- ✅ To quickly see where use cases or detections are lacking and need more attention
 - ✅ To facilitate a phased approach of expanding new use cases based on a large variety of inputs and priorities in the form of Use Case Roadmap
 
 ### ⚡ Principles of the Framework
@@ -186,8 +193,8 @@ The framework includes:
 |------------------|-------------------|
 | **🎯 Fundamentals** | How business risk, threats and compliance requirements drive the framework |
 | **🔄 Lifecycle** | Practical Use Case & Detection Engineering lifecycle management process |
-| **⚙️ Development Guide** | Practical guide to develop correlation and detection rules in SIEM |
-| **📚 Catalog Guide** | Suggested guide to maintain use cases and SIEM Rules in catalogue format |
+| **⚙️ Development Guide** | Practical guide to develop correlation and detection rules |
+| **📚 Catalog Guide** | Suggested guide to maintain use cases and detection rules in catalog format |
 | **📋 Templates** | Series of templates, processes and conventions that support the framework |
 
 ### ⚠️ Challenges of Creating & Managing Use Cases
@@ -303,14 +310,6 @@ Organizations are becoming more vulnerable to cyber threats due to the increasin
 Any potential occurrence that may cause an undesirable or unwanted outcome for an organization or for a specific asset is a threat. Threats are any action or inaction that could cause damage, destruction, alteration, loss, or disclosure of assets or that could block access to or prevent maintenance of assets.
 
 Cyber threats refer to the possibility of a successful cyber-attack that aims to gain unauthorized access, damage, disrupt, or steal an information technology asset, computer network, intellectual property or any other form of sensitive data.
-
-**Known threat sources include:**
-- 🏛️ Hostile nations
-- 💀 Terrorist groups  
-- 🕵️ Corporate spies
-- 🎭 Hacktivists
-- 😠 Disgruntled insiders
-- 🤷 Accidental actions of authorized users
 
 **📜 Compliance**
 
