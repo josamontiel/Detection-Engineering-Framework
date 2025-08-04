@@ -65,12 +65,12 @@ I am very grateful to everyone who has contributed to this Framework during its 
 | 🏢 **Organization/Source** | 📝 **Contribution** | 🔗 **Link** |
 |---------------------------|---------------------|-------------|
 | 🅾️ **Oracle Cloud Security** | Detection Engineering Program Best Practices | [How to improve security monitoring with detection engineering program](https://blogs.oracle.com/cloudsecurity/post/how-to-improve-security-monitoring-with-detection-engineering-program) |
-| 🏦 **Betaalvereniging (Dutch Payment Association)** | MAGMA Security Framework | [MAGMA Safety Framework](https://www.betaalvereniging.nl/en/safety/magma/) |
-| 🔒 **Correlated Security** | SPEED Use Case Framework Methodology | [Introducing SPEED Use Case Framework v1.0](http://correlatedsecurity.com/introducing-speed-use-case-framework-v1-0/) |
-| 🖼️ **Foren6 Security** | Use Case Visual Framework | [UC11 Framework Diagram](https://foren6.files.wordpress.com/2017/10/uc11.png) |
 | 🛡️ **IBM Security Intelligence** | SIEM Use Cases Guide | [Quick Guide to SIEM Use Cases](https://securityintelligence.com/posts/quick-guide-to-siem-use-cases/) |
+| 🏦 **Betaalvereniging (Dutch Payment Association)** | MAGMA Security Framework | [MAGMA Safety Framework](https://www.betaalvereniging.nl/en/safety/magma/) |
 | 🏛️ **MITRE Corporation** | Cyber Adversary Characterization | [Characterizing Effects of Cyber Adversary](http://www.mitre.org/sites/default/files/publications/characterizing-effects-cyber-adversary-13-4173.pdf) |
 | 🎓 **SANS Institute** | Security Operations and Detection | [SANS White Paper 39685](https://www.sans.org/white-papers/39685/) |
+| 🔒 **Correlated Security** | SPEED Use Case Framework Methodology | [Introducing SPEED Use Case Framework v1.0](http://correlatedsecurity.com/introducing-speed-use-case-framework-v1-0/) |
+| 🖼️ **Foren6 Security** | Use Case Visual Framework | [UC11 Framework Diagram](https://foren6.files.wordpress.com/2017/10/uc11.png) |
 
 ### 🎯 Key Contributions by Category
 
