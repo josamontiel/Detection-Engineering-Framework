@@ -41,7 +41,7 @@ Furthermore, Vendor Agnostic Logic encourages a focus on functional requirements
 
 This rule uses the **Blocks** which contains the observed log events.
 
-#### 📦 CR Blocks Example
+#### 📦 Blocks Example
 
 | **Block** | **Details** |
 |-----------|-------------|
