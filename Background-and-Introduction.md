@@ -31,7 +31,7 @@
 
 ### 📄 Preface
 
-In today's ever-evolving digital landscape, organizations face a multitude of sophisticated and persistent cyber threats that can compromise their sensitive data, disrupt operations, and damage their reputation. To effectively combat these threats, a robust **Use Case and Detection Engineering Framework** is essential.
+In today's ever-evolving digital landscape, organizations face a multitude of sophisticated and persistent cyber threats that can compromise their sensitive data, disrupt operations, and damage their reputation. To effectively combat these threats, a robust **Detection Engineering Framework** is essential.
 
 ```mermaid
 graph LR
