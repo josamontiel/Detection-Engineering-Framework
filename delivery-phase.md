@@ -106,12 +106,6 @@ Where:
 *   $FP$ = **False Positives**: The number of benign events that were incorrectly identified as malicious.
 *   $TN$ = **True Negatives**: The number of benign events that were correctly identified as benign.
 
-**In simpler terms:**
-
-$$
-FPR = \frac{\text{Number of False Alarms}}{\text{Total Number of Legitimate Events}}
-$$
-
 ### Example of FPR Calculation
 
 Let's consider a security detection rule designed to identify suspicious login attempts. Over a period, this rule processes 10,000 legitimate (benign) login attempts.
