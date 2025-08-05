@@ -1,65 +1,10 @@
-# 🛡️ Detection Engineering Framework
-
----
-
-## 📖 About this Framework
-
-### 📚 Pre-Git Version History
-
-| **Version** | **📅 Date** | **📊 Status** | **🔄 Changes** |
-|-------------|-------------|---------------|----------------|
-| 0.1 | 13/04/2021 | Draft | First Draft |
-| 1.0 | 14/04/2021 | Release | First Release |
-| 1.1 | 25/04/2021 | Revision | Minor amendments |
-| 1.2 | 15/06/2021 | Revision | Minor amendments |
-| 1.3 | 24/08/2021 | Draft | Overhaul amendments |
-| 1.4 | 07/09/2021 | Released | Minor amendments |
-| 1.5 | 14/04/2022 | Released | Minor amendments |
-| **2.0** | **06/06/2023** | **Revision** | **Major amendments** |
-
-### 👥 Review History
-
-| **👤 Reviewer** | **📋 Version** | **📅 Date** |
-|-----------------|----------------|-------------|
-| Kunal Hatode | 1.0 | 13/04/2021 |
-| Kunal Hatode | 1.5 | 13/04/2022 |
-| Kunal Hatode | 2.0 | 06/06/2023 |
-
----
-
 ## 🎯 Introduction
 
 ### 📄 Preface
 
 In today's ever-evolving digital landscape, organizations face a multitude of sophisticated and persistent cyber threats that can compromise their sensitive data, disrupt operations, and damage their reputation. To effectively combat these threats, a robust **Detection Engineering Framework** is essential.
 
-```mermaid
-graph LR
-    A[🎯 Planning Phase] --> B[⚙️ Development Phase]
-    B --> C[🚀 Delivery Phase]
-    C --> D[🔧 Improvement Phase]
-    D --> A
-    
-    style A fill:#0c2d6b,stroke:#fff,stroke-width:2px,color:#fff
-    style B fill:#9e6a03,stroke:#fff,stroke-width:2px,color:#fff
-    style C fill:#196c2e,stroke:#fff,stroke-width:2px,color:#fff
-    style D fill:#553098,stroke:#fff,stroke-width:2px,color:#fff
-```
-
-This comprehensive guide aims to provide security professionals, incident responders, and IT teams with a holistic understanding of the key principles, strategies, and best practices involved in building and maintaining an effective security monitoring and incident response program.
-
-**🏗️ Framework Phases:**
-
-- **📋 Planning Phase**: Establishing foundation and objectives
-- **⚙️ Development Phase**: Building technical detection capabilities  
-- **🚀 Delivery Phase**: Implementation and activation
-- **🔧 Improvement Phase**: Continuous enhancement and optimization
-
-Throughout the guide, key roles and stakeholders are identified, providing a clear understanding of the responsibilities and contributions of various teams involved in security monitoring and incident response. This holistic approach ensures effective collaboration and efficient handling of security incidents.
-
-> ⚠️ **Important Note**: This guide is a comprehensive framework, encompassing a wide range of concepts, methodologies, and best practices. It serves as a valuable resource for organizations seeking to establish or enhance their security monitoring and incident response capabilities.
-
-By following the principles and recommendations outlined in this guide, organizations can build a resilient and proactive security posture, mitigating risks and responding effectively to emerging threats.
+This comprehensive guide aims to provide security professionals, incident responders, and IT teams with a holistic understanding of the key principles, strategies, and best practices involved in building and maintaining an effective detection engineering response program.
 
 ### 👥 Audience
 
@@ -77,7 +22,7 @@ We hope that this guide will serve as a valuable reference and practical compani
 
 ### 🔍 Scope
 
-This deliverable is a **Detection Engineering Framework** to address the detection of cyber threats & attack tactics techniques and procedures appropriate to the SOC. The objective of building a Detection Engineering Framework is to better protect the organization's valuable assets by designing and developing detection use cases using a holistic approach that connects **Risk**, **Threat** & **compliance requirements**.
+This **Detection Engineering Framework** was built to address the detection of cyber threats & attack tactics techniques and procedures appropriate to the SOC. The objective of building a Detection Engineering Framework is to better protect the organization's valuable assets by designing and developing detection use cases using a holistic approach that connects **Risk**, **Threat** & **compliance requirements**.
 
 ```mermaid
 graph LR
@@ -150,7 +95,7 @@ Within the complexity of the security architecture, framework can provide struct
 - ✅ To quickly see where use cases or detections are lacking and need more attention
 - ✅ To facilitate a phased approach of expanding new use cases based on a large variety of inputs and priorities in the form of Use Case Roadmap
 
-### ⚡ Principles of the Framework
+### ⚡ Principles of Detection Engineering Framework
 
 ```mermaid
 graph TB
@@ -197,6 +142,7 @@ The framework includes:
 | **📚 Catalog Guide** | Suggested guide to maintain use cases and detection rules in catalog format |
 | **📋 Templates** | Series of templates, processes and conventions that support the framework |
 
+---
 ### ⚠️ Challenges of Creating & Managing Use Cases
 
 ```mermaid
@@ -215,8 +161,6 @@ graph TB
     style F fill:#CDDC39,stroke:#000,stroke-width:2px,color:#000
 ```
 
-**🔍 Key Challenges Identified:**
-
 1. **📦 Split Coverage**: Most out-of-the-box use cases are split up from each other based on their rule content package which can be put (after some analysis of the detection logic) under the same "use case" as they have the same detection scope.
 
 2. **🏷️ Naming Issues**: Most SIEM out-of-the-box (and later custom added rules) do not have an overarching naming convention over all rules.
@@ -233,9 +177,9 @@ graph TB
 
 Before going any further, it is important to provide a definition of use cases. This is necessary, because of the fact that the term is used to describe a variety of elements in different publications.
 
-> 📝 **Definition**: "A use case is a security monitoring scenario that is aimed at the detection of manifestations of a cyber threat"
+> 📝 **Definition**: "A use case in the context of this framework is a security monitoring scenario aimed at detecting manifestations of cyber threats, managing risk, and aligning with compliance requirements; if any of these are actualized, the use case also guides our response."
 
-A use case has a **strategical**, **tactical** and **operational** component. This definition emphasizes the fact that the focus of the framework is on the **'detect'** and **'respond'** phase of the NIST cybersecurity framework.
+In taddition to this a use case also has a **strategical**, **tactical** and **operational** component. This definition emphasizes the fact that the focus of the framework is on the **'detect'** and **'respond'** phase of the NIST cybersecurity framework.
 
 ```mermaid
 graph LR
@@ -511,9 +455,6 @@ Incident response activities originating from security alerts are also input int
 ---
 
 ### 📜 Compliance Drivers
-
-
-> 🚨 **Challenge**: Business owners find themselves completely overwhelmed with **dozens of acronyms**, **hundreds of controls**, and complex compliance obligations.
 
 ### 🎯 What is Cybersecurity Compliance?
 
