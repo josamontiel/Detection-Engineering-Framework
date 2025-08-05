@@ -65,28 +65,13 @@ I am very grateful to everyone who has contributed to this Framework during its 
 
 | 🏢 **Organization/Source** | 📝 **Contribution** | 🔗 **Link** |
 |---------------------------|---------------------|-------------|
-| 🅾️ **Oracle Cloud Security** | Detection Engineering Program Best Practices | [How to improve security monitoring with detection engineering program](https://blogs.oracle.com/cloudsecurity/post/how-to-improve-security-monitoring-with-detection-engineering-program) |
-| 🛡️ **IBM Security Intelligence** | SIEM Use Cases Guide | [Quick Guide to SIEM Use Cases](https://securityintelligence.com/posts/quick-guide-to-siem-use-cases/) |
-| 🏦 **Betaalvereniging (Dutch Payment Association)** | MAGMA Security Framework | [MAGMA Safety Framework](https://www.betaalvereniging.nl/en/safety/magma/) |
-| 🏛️ **MITRE Corporation** | Cyber Adversary Characterization | [Characterizing Effects of Cyber Adversary](http://www.mitre.org/sites/default/files/publications/characterizing-effects-cyber-adversary-13-4173.pdf) |
-| 🎓 **SANS Institute** | Security Operations and Detection | [SANS White Paper 39685](https://www.sans.org/white-papers/39685/) |
-| 🔒 **Correlated Security** | SPEED Use Case Framework Methodology | [Introducing SPEED Use Case Framework v1.0](http://correlatedsecurity.com/introducing-speed-use-case-framework-v1-0/) |
-| 🖼️ **Foren6 Security** | Use Case Visual Framework | [UC11 Framework Diagram](https://foren6.files.wordpress.com/2017/10/uc11.png) |
-
-### 🎯 Key Contributions by Category
-
-#### 🏢 **Industry Leadership & Best Practices**
-- **Oracle Cloud Security**: Provided foundational principles for detection engineering programs and operational excellence
-- **IBM Security Intelligence**: Contributed practical SIEM use case development methodologies
-- **Betaalvereniging MAGMA**: Offered comprehensive security framework structure and governance principles
-
-#### 🔬 **Research & Academic Contributions**
-- **MITRE Corporation**: Supplied critical insights into cyber adversary behavior and attack characterization
-- **SANS Institute**: Delivered extensive research on security operations and detection capabilities
-
-#### ⚙️ **Practical Implementation Frameworks**
-- **Correlated Security**: Provided the SPEED framework methodology for systematic use case development
-- **Foren6 Security**: Contributed visual framework representations and structural concepts
+| 🅾️ **Oracle Cloud Security** | Provided foundational principles for detection engineering programs and operational excellence | [How to improve security monitoring with detection engineering program](https://blogs.oracle.com/cloudsecurity/post/how-to-improve-security-monitoring-with-detection-engineering-program) |
+| 🛡️ **IBM Security Intelligence** | Contributed practical SIEM use case development methodologies| [Quick Guide to SIEM Use Cases](https://securityintelligence.com/posts/quick-guide-to-siem-use-cases/) |
+| 🏦 **Betaalvereniging (Dutch Payment Association)** | Offered comprehensive security framework structure and governance principles | [MAGMA Safety Framework](https://www.betaalvereniging.nl/en/safety/magma/) |
+| 🏛️ **MITRE Corporation** | Supplied critical insights into cyber adversary behavior and attack characterization| [Characterizing Effects of Cyber Adversary](http://www.mitre.org/sites/default/files/publications/characterizing-effects-cyber-adversary-13-4173.pdf) |
+| 🎓 **SANS Institute** | Delivered extensive research on security operations and detection capabilities | [SANS White Paper 39685](https://www.sans.org/white-papers/39685/) |
+| 🔒 **Correlated Security** | Provided the SPEED framework methodology for systematic use case development | [Introducing SPEED Use Case Framework v1.0](http://correlatedsecurity.com/introducing-speed-use-case-framework-v1-0/) |
+| 🖼️ **Foren6 Security** | Contributed visual framework representations and structural concepts | [UC11 Framework Diagram](https://foren6.files.wordpress.com/2017/10/uc11.png) |
 
 ---
 
