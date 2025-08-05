@@ -40,7 +40,7 @@ This framework is designed to help security teams develop, implement, and mainta
 
 ## 📚 Preface
 
-The Ke0xes Detection Engineering Framework stands as a testament to the collective wisdom and expertise shared by the cybersecurity community. We extend our deepest gratitude to the organizations, researchers, and thought leaders whose pioneering work has laid the foundation for this comprehensive framework.
+The Detection Engineering Framework stands as a testament to the collective wisdom and expertise shared by the cybersecurity community. We extend our deepest gratitude to the organizations, researchers, and thought leaders whose pioneering work has laid the foundation for this comprehensive framework.
 
 The development of this framework was develped during my position at Cisco as Cyber operations security architect and has been greatly influenced by the invaluable contributions from various Cisco colleagues, industry leaders, academic institutions, and security practitioners who have generously shared their insights, methodologies, and real-world experiences. Their dedication to advancing the field of cybersecurity and detection engineering has been instrumental in shaping the comprehensive approach presented in this framework.
 
