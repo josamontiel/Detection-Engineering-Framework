@@ -4,9 +4,9 @@
 [![Author](https://img.shields.io/badge/Author-Kunal_Hatode-blue)](https://github.com)
 [![Version](https://img.shields.io/badge/Version-2.0-red)](https://github.com)
 
-A comprehensive framework for Security Operations Center (SOC) use case development, implementation, and management. This repository provides structured methodologies, templates, and best practices for building effective security monitoring and detection capabilities.
+A comprehensive framework for Security Operations Center (SOC) use case development, detection engineering, implementation, and management.
 
-This framework is designed to help security teams develop, implement, and maintain effective SOC use cases. Whether you're building a new SOC or enhancing existing capabilities, this repository provides the guidance you need.
+This framework is designed to help security teams develop, implement, and maintain effective SOC use cases and detection rules. Whether you're building a new SOC or enhancing existing capabilities, this repository provides the guidance you need to be better at it.
 
 ## 📖 Core Framework
 
