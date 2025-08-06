@@ -131,16 +131,3 @@ The offloading process should focus on:
 - 📊 **Informing business stakeholders** and recipients of reports generated specifically for that use case that the use case is being removed
 
 ---
-
-## 👥 Key Roles and Stakeholders
-
-### 📊 Roles and Responsibilities Matrix
-
-| **Role** | **Responsibilities** |
-|----------|---------------------|
-| **🛡️ Information Security Team** | • Consolidate or review request for use case improvement from various stakeholders such as security monitoring team, pen test team, business/ asset owner, risk and compliance department, etc.<br>• Determine if new Use Case, modification of existing Use Case or decommission of Use Case is needed |
-| **⚙️ Content Development Team** | • Lead and own the technical analysis for new Use Case or existing Use Case change |
-
----
-
-> 💡 **Key Takeaway**: The Improvement Phase ensures the Detection Engineering Framework remains effective, relevant, and aligned with the evolving threat landscape through systematic evaluation, enhancement, and lifecycle management of detection use cases.
