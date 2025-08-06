@@ -99,5 +99,3 @@ This Detection Engineering Framework provides you with a solid foundation for bu
 The journey to detection engineering excellence begins with understanding that this represents a fundamental shift in how security operations work. You're not just implementing new tools or writing new rules - you're adopting engineering discipline and applying it to security operations. This requires cultural change, skill development, and organizational commitment.
 
 Start small, build momentum, and continuously iterate based on real-world feedback. Focus on demonstrating value early and often, as this builds the organizational support necessary for long-term success. Your journey to detection engineering excellence begins with the first step, and you now have the roadmap to guide you there.
-
-*"Standing on the shoulders of giants, we build upon the collective wisdom of the cybersecurity community to create stronger, more resilient defense mechanisms for organizations worldwide."*
