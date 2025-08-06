@@ -291,26 +291,6 @@ flowchart LR
 
 ---
 
-## 👥 Key Roles and Stakeholders
-
-> 💡 Use case development involves various stakeholders within an organization including risk team, information security and SOC team, business owners, and senior executives.
-
-It is imperative to have a clear understanding of roles, responsibilities and expectation among them. Effective communication and explanation of demand and expected outcome is also one of the key success factors which contribute to an effective implementation of the Detection Engineering Framework.
-
-### 📊 Roles & Responsibilities Matrix
-
-| 🎭 **Role** | 📋 **Responsibilities** |
-|------------|------------------------|
-| **🏛️ Information Security Committee** | • Review and approve use case request<br/>• Review and approve resource and budget plan |
-| **👨‍💼 Business/ Asset Owner** | • Provide input and take part in Contextual Feasibility Analysis |
-| **🔒 Information Security Team** | • Lead and own the Contextual Feasibility Analysis<br/>• Consolidate inputs and requirements from various stakeholders<br/>• Prepare use case request |
-| **👨‍💻 SOC Lead** | • Evaluate and fulfil resource requirements<br/>• Assist in prioritisation of requests |
-
-> 📝 **Note**: As organisational structures and team charters may vary across different organisations, it is advised that one should map corresponding role to their corresponding functions whichever appropriate.
-
-
----
-
 ## 📋 Example Process Steps for Planning Phase
 
 ```mermaid
