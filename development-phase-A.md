@@ -203,12 +203,3 @@ A log parser is a software component that can take a specific log format and con
 
 After all necessary prerequisites are fulfilled, the Detection Engineering Framework is ready to go into the development stage 2 which is the code engineering and testing.
 
----
-
-## 👥 Key Roles and Stakeholders
-
-| **🎭 Role** | **📋 Responsibilities** |
-|-------------|-------------------------|
-| **🔴 Red team/ Pen test team** | • Lead and perform attack simulation |
-| **💻 Content Development Team** | • Lead and own the technical analysis |
-
