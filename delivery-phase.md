@@ -629,11 +629,3 @@ graph TD
 > Automation, fed by the data and alerts collected from orchestration, ingests and analyses data and creates repeated, automated actions to replace manual processes. Tasks previously performed by analysts, such as vulnerability scanning, log analysis, ticket checking and auditing capabilities, can be standardized and automatically executed by automation platforms. Using artificial intelligence (AI) and machine learning to decipher and adapt insights from analysts and automate future responses. Alternately, automation can elevate threats if human intervention is needed.
 
 > Predefined playbooks are essential to the success of Response Automation. Prebuilt or customized playbooks are predefined automated actions. Multiple playbooks can be connected to complete complex actions. For example, if a malicious Uniform Resource Locator (URL) is found in an employee email and identified during a scan, a playbook can be adopted that blocks the email, alerts the employee of the potential phishing attempt and blocklists the Internet Protocol (IP) address of the sender. Automation functionality can tools can also trigger follow-up investigative actions by security teams if necessary. In terms of the phishing example, follow-up could include searching other employee inboxes for similar emails and blocking them and their IP addresses, if found.
-
-## 👥 Key Roles and Stakeholders
-
-| **Role** | **Responsibilities** |
-|----------|---------------------|
-| 👁️ **Security Monitoring Team** | • 📊 Monitoring of newly configured rules and alerts<br>• 🔧 Perform fine tuning or optimisation if needed<br>• 📚 Perform use case cataloguing exercise and update the catalogue entries |
-| 👨‍💻 **Content Development Team** | • ✅ Confirm readiness of hand over pack and deliverables<br>• 🤖 Evaluate and determine if SOAR automation is possible and required<br>• 🔧 Own automation development |
-| 🖥️ **IT/ System/ Network Team** | • 🤝 Support security monitoring team in fine tuning or optimisation |
