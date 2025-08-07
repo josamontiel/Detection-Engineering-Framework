@@ -1,8 +1,11 @@
 # Detection Engineering Framework
 
-[![Status](https://img.shields.io/badge/Status-Released-green.svg)](https://github.com)
 [![Author](https://img.shields.io/badge/Author-Kunal_Hatode-blue)](https://github.com)
-[![Version](https://img.shields.io/badge/Version-2.0-red)](https://github.com)
+[![GitHub Last Commit](https://img.shields.io/github/last-commit/Ke0xes/Detection-Engineering-Framework)](https://github.com/Ke0xes/Detection-Engineering-Framework/commits/main)
+[![GitHub License](https://img.shields.io/github/license/Ke0xes/Detection-Engineering-Framework)](https://github.com/Ke0xes/Detection-Engineering-Framework/blob/main/LICENSE)
+[![GitHub Forks](https://img.shields.io/github/forks/Ke0xes/Detection-Engineering-Framework?style=social)](https://github.com/Ke0xes/Detection-Engineering-Framework/network/members)
+[![GitHub Stars](https://img.shields.io/github/stars/Ke0xes/Detection-Engineering-Framework?style=social)](https://github.com/Ke0xes/Detection-Engineering-Framework/stargazers)
+
 
 A comprehensive framework for Security Operations Center (SOC) use case development, detection engineering, implementation, and management.
 
